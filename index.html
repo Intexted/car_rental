@@ -1,1975 +1,1315 @@
 <!DOCTYPE html>
 <html lang="en-US">
-  <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-    <meta
-      name="viewport"
-      content="width=device-width,initial-scale=1,maximum-scale=1"
-    />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <title>
-      Wheelsberry — Car Rental WordPress Theme  Car Rental WordPress Theme /
-      Landing Page
-    </title>
-    <script>
-      var om_theme_preview_url =
-        "http://demo.olevmedia.net/wheelsberry/wp-content/plugins/olevmedia-preview-wheelsberry/";
-      var om_theme_preview_site_id = 1;
-    </script>
-    <link rel="dns-prefetch" href="//fonts.googleapis.com" />
-    <link rel="dns-prefetch" href="//s.w.org" />
-    <link
-      rel="alternate"
-      type="application/rss+xml"
-      title="Wheelsberry — Car Rental WordPress Theme � Feed"
-      href="https://demo.olevmedia.net/wheelsberry/feed/"
-    />
-    <link
-      rel="alternate"
-      type="application/rss+xml"
-      title="Wheelsberry — Car Rental WordPress Theme � Comments Feed"
-      href="https://demo.olevmedia.net/wheelsberry/comments/feed/"
-    />
-    <script type="text/javascript">
-      window._wpemojiSettings = {
-        baseUrl: "https:\/\/s.w.org\/images\/core\/emoji\/2\/72x72\/",
-        ext: ".png",
-        svgUrl: "https:\/\/s.w.org\/images\/core\/emoji\/2\/svg\/",
-        svgExt: ".svg",
-        source: {
-          concatemoji:
-            "http:\/\/demo.olevmedia.net\/wheelsberry\/wp-includes\/js\/wp-emoji-release.min.js?ver=4.6.1",
-        },
-      };
-      !(function (a, b, c) {
-        function d(a) {
-          var c,
-            d,
-            e,
-            f,
-            g,
-            h = b.createElement("canvas"),
-            i = h.getContext && h.getContext("2d"),
-            j = String.fromCharCode;
-          if (!i || !i.fillText) return !1;
-          switch (((i.textBaseline = "top"), (i.font = "600 32px Arial"), a)) {
-            case "flag":
-              return (
-                i.fillText(j(55356, 56806, 55356, 56826), 0, 0),
-                !(h.toDataURL().length < 3e3) &&
-                  (i.clearRect(0, 0, h.width, h.height),
-                  i.fillText(j(55356, 57331, 65039, 8205, 55356, 57096), 0, 0),
-                  (c = h.toDataURL()),
-                  i.clearRect(0, 0, h.width, h.height),
-                  i.fillText(j(55356, 57331, 55356, 57096), 0, 0),
-                  (d = h.toDataURL()),
-                  c !== d)
-              );
-            case "diversity":
-              return (
-                i.fillText(j(55356, 57221), 0, 0),
-                (e = i.getImageData(16, 16, 1, 1).data),
-                (f = e[0] + "," + e[1] + "," + e[2] + "," + e[3]),
-                i.fillText(j(55356, 57221, 55356, 57343), 0, 0),
-                (e = i.getImageData(16, 16, 1, 1).data),
-                (g = e[0] + "," + e[1] + "," + e[2] + "," + e[3]),
-                f !== g
-              );
-            case "simple":
-              return (
-                i.fillText(j(55357, 56835), 0, 0),
-                0 !== i.getImageData(16, 16, 1, 1).data[0]
-              );
-            case "unicode8":
-              return (
-                i.fillText(j(55356, 57135), 0, 0),
-                0 !== i.getImageData(16, 16, 1, 1).data[0]
-              );
-            case "unicode9":
-              return (
-                i.fillText(j(55358, 56631), 0, 0),
-                0 !== i.getImageData(16, 16, 1, 1).data[0]
-              );
-          }
-          return !1;
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>
+    Wheelsberry — Car Rental WordPress Theme  Car Rental WordPress Theme / Landing Page
+  </title>
+  <script>
+    var om_theme_preview_url =
+      "http://demo.olevmedia.net/wheelsberry/wp-content/plugins/olevmedia-preview-wheelsberry/";
+    var om_theme_preview_site_id = 1;
+  </script>
+  <link rel="dns-prefetch" href="//fonts.googleapis.com" />
+  <link rel="dns-prefetch" href="//s.w.org" />
+  <link rel="alternate" type="application/rss+xml" title="Wheelsberry — Car Rental WordPress Theme � Feed"
+    href="https://demo.olevmedia.net/wheelsberry/feed/" />
+  <link rel="alternate" type="application/rss+xml" title="Wheelsberry — Car Rental WordPress Theme � Comments Feed"
+    href="https://demo.olevmedia.net/wheelsberry/comments/feed/" />
+  <script type="text/javascript">
+    window._wpemojiSettings = {
+      baseUrl: "https:\/\/s.w.org\/images\/core\/emoji\/2\/72x72\/",
+      ext: ".png",
+      svgUrl: "https:\/\/s.w.org\/images\/core\/emoji\/2\/svg\/",
+      svgExt: ".svg",
+      source: {
+        concatemoji: "http:\/\/demo.olevmedia.net\/wheelsberry\/wp-includes\/js\/wp-emoji-release.min.js?ver=4.6.1",
+      },
+    };
+    !(function (a, b, c) {
+      function d(a) {
+        var c,
+          d,
+          e,
+          f,
+          g,
+          h = b.createElement("canvas"),
+          i = h.getContext && h.getContext("2d"),
+          j = String.fromCharCode;
+        if (!i || !i.fillText) return !1;
+        switch (((i.textBaseline = "top"), (i.font = "600 32px Arial"), a)) {
+          case "flag":
+            return (
+              i.fillText(j(55356, 56806, 55356, 56826), 0, 0), !(h.toDataURL().length < 3e3) &&
+              (i.clearRect(0, 0, h.width, h.height),
+                i.fillText(j(55356, 57331, 65039, 8205, 55356, 57096), 0, 0),
+                (c = h.toDataURL()),
+                i.clearRect(0, 0, h.width, h.height),
+                i.fillText(j(55356, 57331, 55356, 57096), 0, 0),
+                (d = h.toDataURL()),
+                c !== d)
+            );
+          case "diversity":
+            return (
+              i.fillText(j(55356, 57221), 0, 0),
+              (e = i.getImageData(16, 16, 1, 1).data),
+              (f = e[0] + "," + e[1] + "," + e[2] + "," + e[3]),
+              i.fillText(j(55356, 57221, 55356, 57343), 0, 0),
+              (e = i.getImageData(16, 16, 1, 1).data),
+              (g = e[0] + "," + e[1] + "," + e[2] + "," + e[3]),
+              f !== g
+            );
+          case "simple":
+            return (
+              i.fillText(j(55357, 56835), 0, 0),
+              0 !== i.getImageData(16, 16, 1, 1).data[0]
+            );
+          case "unicode8":
+            return (
+              i.fillText(j(55356, 57135), 0, 0),
+              0 !== i.getImageData(16, 16, 1, 1).data[0]
+            );
+          case "unicode9":
+            return (
+              i.fillText(j(55358, 56631), 0, 0),
+              0 !== i.getImageData(16, 16, 1, 1).data[0]
+            );
         }
-        function e(a) {
-          var c = b.createElement("script");
-          (c.src = a),
-            (c.type = "text/javascript"),
-            b.getElementsByTagName("head")[0].appendChild(c);
-        }
-        var f, g, h, i;
-        for (
-          i = Array("simple", "flag", "unicode8", "diversity", "unicode9"),
-            c.supports = { everything: !0, everythingExceptFlag: !0 },
-            h = 0;
-          h < i.length;
-          h++
-        )
-          (c.supports[i[h]] = d(i[h])),
-            (c.supports.everything = c.supports.everything && c.supports[i[h]]),
-            "flag" !== i[h] &&
-              (c.supports.everythingExceptFlag =
-                c.supports.everythingExceptFlag && c.supports[i[h]]);
-        (c.supports.everythingExceptFlag =
-          c.supports.everythingExceptFlag && !c.supports.flag),
-          (c.DOMReady = !1),
-          (c.readyCallback = function () {
-            c.DOMReady = !0;
-          }),
-          c.supports.everything ||
-            ((g = function () {
-              c.readyCallback();
-            }),
-            b.addEventListener
-              ? (b.addEventListener("DOMContentLoaded", g, !1),
-                a.addEventListener("load", g, !1))
-              : (a.attachEvent("onload", g),
-                b.attachEvent("onreadystatechange", function () {
-                  "complete" === b.readyState && c.readyCallback();
-                })),
-            (f = c.source || {}),
-            f.concatemoji
-              ? e(f.concatemoji)
-              : f.wpemoji && f.twemoji && (e(f.twemoji), e(f.wpemoji)));
-      })(window, document, window._wpemojiSettings);
-    </script>
-    <style type="text/css">
-      img.wp-smiley,
-      img.emoji {
-        display: inline !important;
-        border: none !important;
-        box-shadow: none !important;
-        height: 1em !important;
-        width: 1em !important;
-        margin: 0 0.07em !important;
-        vertical-align: -0.1em !important;
-        background: none !important;
-        padding: 0 !important;
+        return !1;
       }
-    </style>
-    <link
-      rel="stylesheet"
-      property="stylesheet"
-      id="contact-form-7-css"
-      href="css/styles.css"
-      type="text/css"
-      media="all"
-    />
-    <link
-      rel="stylesheet"
-      property="stylesheet"
-      id="om-theme-preview-css"
-      href="css/preview.css"
-      type="text/css"
-      media="all"
-    />
-    <link
-      rel="stylesheet"
-      property="stylesheet"
-      id="wheelsberry-style-css"
-      href="css/style.css"
-      type="text/css"
-      media="all"
-    />
-    <link
-      rel="stylesheet"
-      property="stylesheet"
-      id="wheelsberry-responsive-mobile-css"
-      href="css/responsive-mobile.css"
-      type="text/css"
-      media="all"
-    />
-    <link
-      rel="stylesheet"
-      property="stylesheet"
-      id="omFont-css"
-      href="css/omFont.css"
-      type="text/css"
-      media="all"
-    />
-    <link
-      rel="stylesheet"
-      property="stylesheet"
-      id="prettyphoto-css"
-      href="css/prettyPhoto.custom.css"
-      type="text/css"
-      media="all"
-    />
-    <link
-      rel="stylesheet"
-      property="stylesheet"
-      id="opensans400600700-css"
-      href="css/css.css"
-      type="text/css"
-      media="all"
-    />
-    <link
-      rel="stylesheet"
-      property="stylesheet"
-      id="montserrat400700-css"
-      href="css/css_2.css"
-      type="text/css"
-      media="all"
-    />
-    <link
-      rel="stylesheet"
-      property="stylesheet"
-      id="quicksand400700-css"
-      href="css/css_1.css"
-      type="text/css"
-      media="all"
-    />
-    <link
-      rel="stylesheet"
-      property="stylesheet"
-      id="omfw-style-custom-css"
-      href="css/style-custom.css"
-      type="text/css"
-      media="all"
-    />
-    <link
-      rel="stylesheet"
-      property="stylesheet"
-      id="js_composer_front-css"
-      href="css/js_composer.min.css"
-      type="text/css"
-      media="all"
-    />
-    <script type="text/javascript" src="js/jquery.js"></script>
-    <script type="text/javascript" src="js/jquery-migrate.min.js"></script>
-    <link
-      rel="https://api.w.org/"
-      href="https://demo.olevmedia.net/wheelsberry/wp-json/"
-    />
-    <link
-      rel="EditURI"
-      type="application/rsd+xml"
-      title="RSD"
-      href="https://demo.olevmedia.net/wheelsberry/xmlrpc.php?rsd"
-    />
-    <link
-      rel="wlwmanifest"
-      type="application/wlwmanifest+xml"
-      href="https://demo.olevmedia.net/wheelsberry/wp-includes/wlwmanifest.xml"
-    />
-    <meta name="generator" content="WordPress 4.6.1" />
-    <link rel="canonical" href="https://demo.olevmedia.net/wheelsberry/" />
-    <link rel="shortlink" href="https://demo.olevmedia.net/wheelsberry/" />
-    <link
-      rel="alternate"
-      type="application/json+oembed"
-      href="https://demo.olevmedia.net/wheelsberry/wp-json/oembed/1.0/embed?url=http%3A%2F%2Fdemo.olevmedia.net%2Fwheelsberry%2F"
-    />
-    <link
-      rel="alternate"
-      type="text/xml+oembed"
-      href="https://demo.olevmedia.net/wheelsberry/wp-json/oembed/1.0/embed?url=http%3A%2F%2Fdemo.olevmedia.net%2Fwheelsberry%2F&amp;format=xml"
-    />
-    <meta name="theme-color" content="#1a1a1a" />
-    <meta name="msapplication-navbutton-color" content="#1a1a1a" />
-    <meta name="apple-mobile-web-app-status-bar-style" content="#1a1a1a" />
-    <meta
-      name="generator"
-      content="Powered by Visual Composer - drag and drop page builder for WordPress."
-    />
-    <!--[if lte IE 9
+
+      function e(a) {
+        var c = b.createElement("script");
+        (c.src = a),
+          (c.type = "text/javascript"),
+          b.getElementsByTagName("head")[0].appendChild(c);
+      }
+      var f, g, h, i;
+      for (
+        i = Array("simple", "flag", "unicode8", "diversity", "unicode9"),
+        c.supports = {
+          everything: !0,
+          everythingExceptFlag: !0
+        },
+        h = 0; h < i.length; h++
+      )
+        (c.supports[i[h]] = d(i[h])),
+          (c.supports.everything = c.supports.everything && c.supports[i[h]]),
+          "flag" !== i[h] &&
+          (c.supports.everythingExceptFlag =
+            c.supports.everythingExceptFlag && c.supports[i[h]]);
+      (c.supports.everythingExceptFlag =
+        c.supports.everythingExceptFlag && !c.supports.flag),
+        (c.DOMReady = !1),
+        (c.readyCallback = function () {
+          c.DOMReady = !0;
+        }),
+        c.supports.everything ||
+        ((g = function () {
+          c.readyCallback();
+        }),
+          b.addEventListener ?
+            (b.addEventListener("DOMContentLoaded", g, !1),
+              a.addEventListener("load", g, !1)) :
+            (a.attachEvent("onload", g),
+              b.attachEvent("onreadystatechange", function () {
+                "complete" === b.readyState && c.readyCallback();
+              })),
+          (f = c.source || {}),
+          f.concatemoji ?
+            e(f.concatemoji) :
+            f.wpemoji && f.twemoji && (e(f.twemoji), e(f.wpemoji)));
+    })(window, document, window._wpemojiSettings);
+  </script>
+  <style type="text/css">
+    img.wp-smiley,
+    img.emoji {
+      display: inline !important;
+      border: none !important;
+      box-shadow: none !important;
+      height: 1em !important;
+      width: 1em !important;
+      margin: 0 0.07em !important;
+      vertical-align: -0.1em !important;
+      background: none !important;
+      padding: 0 !important;
+    }
+  </style>
+  <link rel="stylesheet" property="stylesheet" id="contact-form-7-css" href="css/styles.css" type="text/css"
+    media="all" />
+  <link rel="stylesheet" property="stylesheet" id="om-theme-preview-css" href="css/preview.css" type="text/css"
+    media="all" />
+  <link rel="stylesheet" property="stylesheet" id="wheelsberry-style-css" href="css/style.css" type="text/css"
+    media="all" />
+  <link rel="stylesheet" property="stylesheet" id="wheelsberry-responsive-mobile-css" href="css/responsive-mobile.css"
+    type="text/css" media="all" />
+  <link rel="stylesheet" property="stylesheet" id="omFont-css" href="css/omFont.css" type="text/css" media="all" />
+  <link rel="stylesheet" property="stylesheet" id="prettyphoto-css" href="css/prettyPhoto.custom.css" type="text/css"
+    media="all" />
+  <link rel="stylesheet" property="stylesheet" id="opensans400600700-css" href="css/css.css" type="text/css"
+    media="all" />
+  <link rel="stylesheet" property="stylesheet" id="montserrat400700-css" href="css/css_2.css" type="text/css"
+    media="all" />
+  <link rel="stylesheet" property="stylesheet" id="quicksand400700-css" href="css/css_1.css" type="text/css"
+    media="all" />
+  <link rel="stylesheet" property="stylesheet" id="omfw-style-custom-css" href="css/style-custom.css" type="text/css"
+    media="all" />
+  <link rel="stylesheet" property="stylesheet" id="js_composer_front-css" href="css/js_composer.min.css" type="text/css"
+    media="all" />
+  <script type="text/javascript" src="js/jquery.js"></script>
+  <script type="text/javascript" src="js/jquery-migrate.min.js"></script>
+  <link rel="https://api.w.org/" href="https://demo.olevmedia.net/wheelsberry/wp-json/" />
+  <link rel="EditURI" type="application/rsd+xml" title="RSD"
+    href="https://demo.olevmedia.net/wheelsberry/xmlrpc.php?rsd" />
+  <link rel="wlwmanifest" type="application/wlwmanifest+xml"
+    href="https://demo.olevmedia.net/wheelsberry/wp-includes/wlwmanifest.xml" />
+  <meta name="generator" content="WordPress 4.6.1" />
+  <link rel="canonical" href="https://demo.olevmedia.net/wheelsberry/" />
+  <link rel="shortlink" href="https://demo.olevmedia.net/wheelsberry/" />
+  <link rel="alternate" type="application/json+oembed"
+    href="https://demo.olevmedia.net/wheelsberry/wp-json/oembed/1.0/embed?url=http%3A%2F%2Fdemo.olevmedia.net%2Fwheelsberry%2F" />
+  <link rel="alternate" type="text/xml+oembed"
+    href="https://demo.olevmedia.net/wheelsberry/wp-json/oembed/1.0/embed?url=http%3A%2F%2Fdemo.olevmedia.net%2Fwheelsberry%2F&amp;format=xml" />
+  <meta name="theme-color" content="#1a1a1a" />
+  <meta name="msapplication-navbutton-color" content="#1a1a1a" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="#1a1a1a" />
+  <meta name="generator" content="Powered by Visual Composer - drag and drop page builder for WordPress." />
+  <!--[if lte IE 9
       ]><link
         rel="stylesheet"
         type="text/css"
         href="http://demo.olevmedia.net/wheelsberry/wp-content/plugins/js_composer/assets/css/vc_lte_ie9.min.css"
         media="screen"
     /><![endif]-->
-    <!--[if IE 8
+  <!--[if IE 8
       ]><link
         rel="stylesheet"
         type="text/css"
         href="http://demo.olevmedia.net/wheelsberry/wp-content/plugins/js_composer/assets/css/vc-ie8.min.css"
         media="screen"
     /><![endif]-->
-    <style type="text/css" data-type="vc_shortcodes-custom-css">
-      .vc_custom_1470245913143 {
-        background-color: #ffffff !important;
-      }
+  <style type="text/css" data-type="vc_shortcodes-custom-css">
+    .vc_custom_1470245913143 {
+      background-color: #ffffff !important;
+    }
 
-      .vc_custom_1470247299737 {
-        background-color: #f7f7f7 !important;
+    .vc_custom_1470247299737 {
+      background-color: #f7f7f7 !important;
+    }
+  </style>
+  <noscript>
+    <style type="text/css">
+      .wpb_animate_when_almost_visible {
+        opacity: 1;
       }
     </style>
-    <noscript>
-      <style type="text/css">
-        .wpb_animate_when_almost_visible {
-          opacity: 1;
-        }
-      </style>
-    </noscript>
-  </head>
+  </noscript>
+</head>
 
-  <body
-    class="home page page-id-9 page-template-default om-wpb sidebar--hidden om_theme wheelsberry_theme om-animation-enabled primary-menu-highlight-active titles--uppercase wpb-js-composer js-comp-ver-4.12 vc_responsive"
-  >
-    <header id="top" class="header-wrapper">
-      <div class="header header__logo--type-image header__menu--sticky">
-        <div class="om-container">
-          <div class="om-container__inner">
-            <div class="header__inner">
-              <div class="header__logo" style="font-size: 34px">
-                <a href="https://demo.olevmedia.net/wheelsberry/"
-                  ><img
-                    class="non-retina"
-                    src="logo.svg"
-                    alt="Wheelsberry — Car Rental WordPress Theme"
-                    width="182"
-                    height="53"
-                    style="max-height: 53px" /><img
-                    class="only-retina"
-                    src="logo.svg"
-                    alt="Wheelsberry — Car Rental WordPress Theme"
-                    width="182"
-                    height="53"
-                    style="max-height: 53px"
-                /></a>
+<body
+  class="home page page-id-9 page-template-default om-wpb sidebar--hidden om_theme wheelsberry_theme om-animation-enabled primary-menu-highlight-active titles--uppercase wpb-js-composer js-comp-ver-4.12 vc_responsive">
+  <header id="top" class="header-wrapper">
+    <div class="header header__logo--type-image header__menu--sticky">
+      <div class="om-container">
+        <div class="om-container__inner">
+          <div class="header__inner">
+            <div class="header__logo" style="font-size: 34px">
+              <a href="https://demo.olevmedia.net/wheelsberry/"><img class="non-retina" src="logo.svg"
+                  alt="Wheelsberry — Car Rental WordPress Theme" width="182" height="53" style="max-height: 53px" /><img
+                  class="only-retina" src="logo.svg" alt="Wheelsberry — Car Rental WordPress Theme" width="182"
+                  height="53" style="max-height: 53px" /></a>
+            </div>
+            <div class="header__menu clearfix apply-uppercase">
+              <div class="primary-menu-container">
+                <nav class="menu-primary-menu-container">
+                  <ul id="menu-primary-menu" class="primary-menu sf-menu clearfix show-dropdown-symbol">
+                    <li id="menu-item-62"
+                      class="menu-item menu-item-type-post_type menu-item-object-page page_item page-item-9 current_page_item menu-item-62">
+                      <a href="https://demo.olevmedia.net/wheelsberry/#top">Home</a>
+                    </li>
+                    <li id="menu-item-63"
+                      class="menu-item menu-item-type-post_type menu-item-object-page page_item page-item-9 current_page_item menu-item-63">
+                      <a href="https://demo.olevmedia.net/wheelsberry/#services">Services</a>
+                    </li>
+                    <li id="menu-item-64"
+                      class="menu-item menu-item-type-post_type menu-item-object-page page_item page-item-9 current_page_item menu-item-64">
+                      <a href="https://demo.olevmedia.net/wheelsberry/#about">About</a>
+                    </li>
+                    <li id="menu-item-65"
+                      class="menu-item menu-item-type-post_type menu-item-object-page page_item page-item-9 current_page_item menu-item-65">
+                      <a href="https://demo.olevmedia.net/wheelsberry/#testimonials">Reviews</a>
+                    </li>
+                    <li id="menu-item-66"
+                      class="menu-item menu-item-type-post_type menu-item-object-page page_item page-item-9 current_page_item menu-item-66">
+                      <a href="https://demo.olevmedia.net/wheelsberry/#locations">Locations</a>
+                    </li>
+                    <li id="menu-item-99"
+                      class="menu-item menu-item-type-post_type menu-item-object-page page_item page-item-9 current_page_item menu-item-99">
+                      <a href="https://demo.olevmedia.net/wheelsberry/#contacts">Contacts</a>
+                    </li>
+                  </ul>
+                </nav>
               </div>
-              <div class="header__menu clearfix apply-uppercase">
-                <div class="primary-menu-container">
-                  <nav class="menu-primary-menu-container">
-                    <ul
-                      id="menu-primary-menu"
-                      class="primary-menu sf-menu clearfix show-dropdown-symbol"
-                    >
-                      <li
-                        id="menu-item-62"
-                        class="menu-item menu-item-type-post_type menu-item-object-page page_item page-item-9 current_page_item menu-item-62"
-                      >
-                        <a href="https://demo.olevmedia.net/wheelsberry/#top"
-                          >Home</a
-                        >
-                      </li>
-                      <li
-                        id="menu-item-63"
-                        class="menu-item menu-item-type-post_type menu-item-object-page page_item page-item-9 current_page_item menu-item-63"
-                      >
-                        <a
-                          href="https://demo.olevmedia.net/wheelsberry/#services"
-                          >Services</a
-                        >
-                      </li>
-                      <li
-                        id="menu-item-64"
-                        class="menu-item menu-item-type-post_type menu-item-object-page page_item page-item-9 current_page_item menu-item-64"
-                      >
-                        <a href="https://demo.olevmedia.net/wheelsberry/#about"
-                          >About</a
-                        >
-                      </li>
-                      <li
-                        id="menu-item-65"
-                        class="menu-item menu-item-type-post_type menu-item-object-page page_item page-item-9 current_page_item menu-item-65"
-                      >
-                        <a
-                          href="https://demo.olevmedia.net/wheelsberry/#testimonials"
-                          >Reviews</a
-                        >
-                      </li>
-                      <li
-                        id="menu-item-66"
-                        class="menu-item menu-item-type-post_type menu-item-object-page page_item page-item-9 current_page_item menu-item-66"
-                      >
-                        <a
-                          href="https://demo.olevmedia.net/wheelsberry/#locations"
-                          >Locations</a
-                        >
-                      </li>
-                      <li
-                        id="menu-item-99"
-                        class="menu-item menu-item-type-post_type menu-item-object-page page_item page-item-9 current_page_item menu-item-99"
-                      >
-                        <a
-                          href="https://demo.olevmedia.net/wheelsberry/#contacts"
-                          >Contacts</a
-                        >
-                      </li>
-                    </ul>
-                  </nav>
-                </div>
-                <div class="mobile-menu-control">
-                  <span class="mobile-menu-control__l1"></span
-                  ><span class="mobile-menu-control__l2"></span
-                  ><span class="mobile-menu-control__l3"></span>
-                </div>
-                <div class="mobile-menu-container">
-                  <nav class="menu-primary-menu-container">
-                    <ul
-                      id="menu-primary-menu-1"
-                      class="primary-mobile-menu sf-menu clearfix show-dropdown-symbol"
-                    >
-                      <li
-                        class="menu-item menu-item-type-post_type menu-item-object-page page_item page-item-9 current_page_item menu-item-62"
-                      >
-                        <a href="https://demo.olevmedia.net/wheelsberry/#top"
-                          >Home</a
-                        >
-                      </li>
-                      <li
-                        class="menu-item menu-item-type-post_type menu-item-object-page page_item page-item-9 current_page_item menu-item-63"
-                      >
-                        <a
-                          href="https://demo.olevmedia.net/wheelsberry/#services"
-                          >Services</a
-                        >
-                      </li>
-                      <li
-                        class="menu-item menu-item-type-post_type menu-item-object-page page_item page-item-9 current_page_item menu-item-64"
-                      >
-                        <a href="https://demo.olevmedia.net/wheelsberry/#about"
-                          >About</a
-                        >
-                      </li>
-                      <li
-                        class="menu-item menu-item-type-post_type menu-item-object-page page_item page-item-9 current_page_item menu-item-65"
-                      >
-                        <a
-                          href="https://demo.olevmedia.net/wheelsberry/#testimonials"
-                          >Reviews</a
-                        >
-                      </li>
-                      <li
-                        class="menu-item menu-item-type-post_type menu-item-object-page page_item page-item-9 current_page_item menu-item-66"
-                      >
-                        <a
-                          href="https://demo.olevmedia.net/wheelsberry/#locations"
-                          >Locations</a
-                        >
-                      </li>
-                      <li
-                        class="menu-item menu-item-type-post_type menu-item-object-page page_item page-item-9 current_page_item menu-item-99"
-                      >
-                        <a
-                          href="https://demo.olevmedia.net/wheelsberry/#contacts"
-                          >Contacts</a
-                        >
-                      </li>
-                    </ul>
-                  </nav>
-                </div>
+              <div class="mobile-menu-control">
+                <span class="mobile-menu-control__l1"></span><span class="mobile-menu-control__l2"></span><span
+                  class="mobile-menu-control__l3"></span>
+              </div>
+              <div class="mobile-menu-container">
+                <nav class="menu-primary-menu-container">
+                  <ul id="menu-primary-menu-1" class="primary-mobile-menu sf-menu clearfix show-dropdown-symbol">
+                    <li
+                      class="menu-item menu-item-type-post_type menu-item-object-page page_item page-item-9 current_page_item menu-item-62">
+                      <a href="https://demo.olevmedia.net/wheelsberry/#top">Home</a>
+                    </li>
+                    <li
+                      class="menu-item menu-item-type-post_type menu-item-object-page page_item page-item-9 current_page_item menu-item-63">
+                      <a href="https://demo.olevmedia.net/wheelsberry/#services">Services</a>
+                    </li>
+                    <li
+                      class="menu-item menu-item-type-post_type menu-item-object-page page_item page-item-9 current_page_item menu-item-64">
+                      <a href="https://demo.olevmedia.net/wheelsberry/#about">About</a>
+                    </li>
+                    <li
+                      class="menu-item menu-item-type-post_type menu-item-object-page page_item page-item-9 current_page_item menu-item-65">
+                      <a href="https://demo.olevmedia.net/wheelsberry/#testimonials">Reviews</a>
+                    </li>
+                    <li
+                      class="menu-item menu-item-type-post_type menu-item-object-page page_item page-item-9 current_page_item menu-item-66">
+                      <a href="https://demo.olevmedia.net/wheelsberry/#locations">Locations</a>
+                    </li>
+                    <li
+                      class="menu-item menu-item-type-post_type menu-item-object-page page_item page-item-9 current_page_item menu-item-99">
+                      <a href="https://demo.olevmedia.net/wheelsberry/#contacts">Contacts</a>
+                    </li>
+                  </ul>
+                </nav>
               </div>
             </div>
           </div>
         </div>
       </div>
-    </header>
-    <div class="cars-slider" id="cars-slider">
-      <div class="car-slider__title-wrapper om-container">
-        <div class="om-container__inner">
-          <h2 class="cars-slider__title">Modèles de véhicules</h2>
-          <div class="h-subtitle cars-slider__subtitle">
-            Réservez maintenant et obtenez la meilleure offre
-          </div>
+    </div>
+  </header>
+  <div class="cars-slider" id="cars-slider">
+    <div class="car-slider__title-wrapper om-container">
+      <div class="om-container__inner">
+        <h2 class="cars-slider__title">Modèles de véhicules</h2>
+        <div class="h-subtitle cars-slider__subtitle">
+          Réservez maintenant et obtenez la meilleure offre
         </div>
       </div>
-      <div class="cars-slider__inner owl-carousel" id="myslider"></div>
     </div>
-    <div class="reservation reservation--full" id="reservation">
-      <div class="reservation-form">
-        <div class="om-container">
-          <div class="om-container__inner">
-            <div class="reservation-form__inner">
-              <div class="reservation-form__titles">
-                <h2 class="reservation-form__title">
-                  Réservez une voiture dès maintenant !
-                </h2>
+    <div class="cars-slider__inner owl-carousel" id="myslider"></div>
+  </div>
+  <div class="reservation reservation--full" id="reservation">
+    <div class="reservation-form">
+      <div class="om-container">
+        <div class="om-container__inner">
+          <div class="reservation-form__inner">
+            <div class="reservation-form__titles">
+              <h2 class="reservation-form__title">
+                Réservez une voiture dès maintenant !
+              </h2>
+            </div>
+            <form id="reservation-form-step-1">
+              <div class="reservation-form__line reservation-form__car">
+                <div class="reservation-form__field-inner">
+                  <select class="reservation-form__car-select" id="reservation-form__car-select" name="car-model">
+                    <option></option>
+                    <option value="15">Toyota Aygo</option>
+                    <option value="13">Kia Ceed</option>
+                    <option value="11">Volvo V60</option>
+                    <option value="14">BMW 3-Series</option>
+                    <option value="16">Volkswagen Amarok</option>
+                  </select>
+                  <div class="reservation-form__car-select-label" id="reservation-form__car-select-label">
+                    Choisissez une voiture
+                  </div>
+                </div>
               </div>
-              <form id="reservation-form-step-1">
-                <div class="reservation-form__line reservation-form__car">
-                  <div class="reservation-form__field-inner">
-                    <select
-                      class="reservation-form__car-select"
-                      id="reservation-form__car-select"
-                      name="car-model"
-                    >
-                      <option></option>
-                      <option value="15">Toyota Aygo</option>
-                      <option value="13">Kia Ceed</option>
-                      <option value="11">Volvo V60</option>
-                      <option value="14">BMW 3-Series</option>
-                      <option value="16">Volkswagen Amarok</option>
-                    </select>
-                    <div
-                      class="reservation-form__car-select-label"
-                      id="reservation-form__car-select-label"
-                    >
-                      Choisissez une voiture
+              <div class="reservation-form__more">
+                <div class="reservation-form__line reservation-form__set reservation-form__pick-up">
+                  <div class="reservation-form__pick-up-location reservation-form__location">
+                    <div class="reservation-form__field-inner">
+                      <label for="reservation-form__pick-up-location-select"
+                        class="reservation-form__label reservation-form__pick-up-location-label reservation-form__location-label">Pick-up</label>
+                      <select name="pick-up-location" class="reservation-form__pick-up-location-select"
+                        id="reservation-form__pick-up-location-select" data-placeholder="Choisissez une location">
+                        <option></option>
+                        <option value="17">New York Airport</option>
+                        <option value="18">Jersey City</option>
+                        <option value="19">Washington</option>
+                        <option value="20">Pittsburgh</option>
+                        <option value="21">San Francisco</option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="reservation-form__pick-up-date reservation-form__date">
+                    <div class="reservation-form__field-inner">
+                      <label for="reservation-form__pick-up-date-input"
+                        class="reservation-form__label reservation-form__pick-up-date-label reservation-form__date-label">Pick-up</label>
+                      <div class="reservation-form__date-wrapper">
+                        <input type="text" name="pick-up-date" readonly="readonly" placeholder="Choisissez une date"
+                          class="reservation-form__pick-up-date-input" id="reservation-form__pick-up-date-input"
+                          data-date-format="MM dd, yy" />
+                      </div>
+                    </div>
+                  </div>
+                  <div class="reservation-form__pick-up-time reservation-form__time">
+                    <div class="reservation-form__field-inner">
+                      <select name="pick-up-time" class="reservation-form__pick-up-time-select"
+                        id="reservation-form__pick-up-time-select">
+                        <option value="12:00 am">12:00 am</option>
+                        <option value="12:15 am">12:15 am</option>
+                        <option value="12:30 am">12:30 am</option>
+                        <option value="12:45 am">12:45 am</option>
+                        <option value="1:00 am">1:00 am</option>
+                        <option value="1:15 am">1:15 am</option>
+                        <option value="1:30 am">1:30 am</option>
+                        <option value="1:45 am">1:45 am</option>
+                        <option value="2:00 am">2:00 am</option>
+                        <option value="2:15 am">2:15 am</option>
+                        <option value="2:30 am">2:30 am</option>
+                        <option value="2:45 am">2:45 am</option>
+                        <option value="3:00 am">3:00 am</option>
+                        <option value="3:15 am">3:15 am</option>
+                        <option value="3:30 am">3:30 am</option>
+                        <option value="3:45 am">3:45 am</option>
+                        <option value="4:00 am">4:00 am</option>
+                        <option value="4:15 am">4:15 am</option>
+                        <option value="4:30 am">4:30 am</option>
+                        <option value="4:45 am">4:45 am</option>
+                        <option value="5:00 am">5:00 am</option>
+                        <option value="5:15 am">5:15 am</option>
+                        <option value="5:30 am">5:30 am</option>
+                        <option value="5:45 am">5:45 am</option>
+                        <option value="6:00 am">6:00 am</option>
+                        <option value="6:15 am">6:15 am</option>
+                        <option value="6:30 am">6:30 am</option>
+                        <option value="6:45 am">6:45 am</option>
+                        <option value="7:00 am">7:00 am</option>
+                        <option value="7:15 am">7:15 am</option>
+                        <option value="7:30 am">7:30 am</option>
+                        <option value="7:45 am">7:45 am</option>
+                        <option value="8:00 am">8:00 am</option>
+                        <option value="8:15 am">8:15 am</option>
+                        <option value="8:30 am">8:30 am</option>
+                        <option value="8:45 am">8:45 am</option>
+                        <option value="9:00 am">9:00 am</option>
+                        <option value="9:15 am">9:15 am</option>
+                        <option value="9:30 am">9:30 am</option>
+                        <option value="9:45 am">9:45 am</option>
+                        <option value="10:00 am">10:00 am</option>
+                        <option value="10:15 am">10:15 am</option>
+                        <option value="10:30 am">10:30 am</option>
+                        <option value="10:45 am">10:45 am</option>
+                        <option value="11:00 am">11:00 am</option>
+                        <option value="11:15 am">11:15 am</option>
+                        <option value="11:30 am">11:30 am</option>
+                        <option value="11:45 am">11:45 am</option>
+                        <option value="12:00 pm" selected="selected">
+                          12:00 pm
+                        </option>
+                        <option value="12:15 pm">12:15 pm</option>
+                        <option value="12:30 pm">12:30 pm</option>
+                        <option value="12:45 pm">12:45 pm</option>
+                        <option value="1:00 pm">1:00 pm</option>
+                        <option value="1:15 pm">1:15 pm</option>
+                        <option value="1:30 pm">1:30 pm</option>
+                        <option value="1:45 pm">1:45 pm</option>
+                        <option value="2:00 pm">2:00 pm</option>
+                        <option value="2:15 pm">2:15 pm</option>
+                        <option value="2:30 pm">2:30 pm</option>
+                        <option value="2:45 pm">2:45 pm</option>
+                        <option value="3:00 pm">3:00 pm</option>
+                        <option value="3:15 pm">3:15 pm</option>
+                        <option value="3:30 pm">3:30 pm</option>
+                        <option value="3:45 pm">3:45 pm</option>
+                        <option value="4:00 pm">4:00 pm</option>
+                        <option value="4:15 pm">4:15 pm</option>
+                        <option value="4:30 pm">4:30 pm</option>
+                        <option value="4:45 pm">4:45 pm</option>
+                        <option value="5:00 pm">5:00 pm</option>
+                        <option value="5:15 pm">5:15 pm</option>
+                        <option value="5:30 pm">5:30 pm</option>
+                        <option value="5:45 pm">5:45 pm</option>
+                        <option value="6:00 pm">6:00 pm</option>
+                        <option value="6:15 pm">6:15 pm</option>
+                        <option value="6:30 pm">6:30 pm</option>
+                        <option value="6:45 pm">6:45 pm</option>
+                        <option value="7:00 pm">7:00 pm</option>
+                        <option value="7:15 pm">7:15 pm</option>
+                        <option value="7:30 pm">7:30 pm</option>
+                        <option value="7:45 pm">7:45 pm</option>
+                        <option value="8:00 pm">8:00 pm</option>
+                        <option value="8:15 pm">8:15 pm</option>
+                        <option value="8:30 pm">8:30 pm</option>
+                        <option value="8:45 pm">8:45 pm</option>
+                        <option value="9:00 pm">9:00 pm</option>
+                        <option value="9:15 pm">9:15 pm</option>
+                        <option value="9:30 pm">9:30 pm</option>
+                        <option value="9:45 pm">9:45 pm</option>
+                        <option value="10:00 pm">10:00 pm</option>
+                        <option value="10:15 pm">10:15 pm</option>
+                        <option value="10:30 pm">10:30 pm</option>
+                        <option value="10:45 pm">10:45 pm</option>
+                        <option value="11:00 pm">11:00 pm</option>
+                        <option value="11:15 pm">11:15 pm</option>
+                        <option value="11:30 pm">11:30 pm</option>
+                        <option value="11:45 pm">11:45 pm</option>
+                      </select>
                     </div>
                   </div>
                 </div>
-                <div class="reservation-form__more">
-                  <div
-                    class="reservation-form__line reservation-form__set reservation-form__pick-up"
-                  >
-                    <div
-                      class="reservation-form__pick-up-location reservation-form__location"
-                    >
-                      <div class="reservation-form__field-inner">
-                        <label
-                          for="reservation-form__pick-up-location-select"
-                          class="reservation-form__label reservation-form__pick-up-location-label reservation-form__location-label"
-                          >Pick-up</label
-                        >
-                        <select
-                          name="pick-up-location"
-                          class="reservation-form__pick-up-location-select"
-                          id="reservation-form__pick-up-location-select"
-                          data-placeholder="Choisissez une location"
-                        >
-                          <option></option>
-                          <option value="17">New York Airport</option>
-                          <option value="18">Jersey City</option>
-                          <option value="19">Washington</option>
-                          <option value="20">Pittsburgh</option>
-                          <option value="21">San Francisco</option>
-                        </select>
-                      </div>
-                    </div>
-                    <div
-                      class="reservation-form__pick-up-date reservation-form__date"
-                    >
-                      <div class="reservation-form__field-inner">
-                        <label
-                          for="reservation-form__pick-up-date-input"
-                          class="reservation-form__label reservation-form__pick-up-date-label reservation-form__date-label"
-                          >Pick-up</label
-                        >
-                        <div class="reservation-form__date-wrapper">
-                          <input
-                            type="text"
-                            name="pick-up-date"
-                            readonly="readonly"
-                            placeholder="Choisissez une date"
-                            class="reservation-form__pick-up-date-input"
-                            id="reservation-form__pick-up-date-input"
-                            data-date-format="MM dd, yy"
-                          />
-                        </div>
-                      </div>
-                    </div>
-                    <div
-                      class="reservation-form__pick-up-time reservation-form__time"
-                    >
-                      <div class="reservation-form__field-inner">
-                        <select
-                          name="pick-up-time"
-                          class="reservation-form__pick-up-time-select"
-                          id="reservation-form__pick-up-time-select"
-                        >
-                          <option value="12:00 am">12:00 am</option>
-                          <option value="12:15 am">12:15 am</option>
-                          <option value="12:30 am">12:30 am</option>
-                          <option value="12:45 am">12:45 am</option>
-                          <option value="1:00 am">1:00 am</option>
-                          <option value="1:15 am">1:15 am</option>
-                          <option value="1:30 am">1:30 am</option>
-                          <option value="1:45 am">1:45 am</option>
-                          <option value="2:00 am">2:00 am</option>
-                          <option value="2:15 am">2:15 am</option>
-                          <option value="2:30 am">2:30 am</option>
-                          <option value="2:45 am">2:45 am</option>
-                          <option value="3:00 am">3:00 am</option>
-                          <option value="3:15 am">3:15 am</option>
-                          <option value="3:30 am">3:30 am</option>
-                          <option value="3:45 am">3:45 am</option>
-                          <option value="4:00 am">4:00 am</option>
-                          <option value="4:15 am">4:15 am</option>
-                          <option value="4:30 am">4:30 am</option>
-                          <option value="4:45 am">4:45 am</option>
-                          <option value="5:00 am">5:00 am</option>
-                          <option value="5:15 am">5:15 am</option>
-                          <option value="5:30 am">5:30 am</option>
-                          <option value="5:45 am">5:45 am</option>
-                          <option value="6:00 am">6:00 am</option>
-                          <option value="6:15 am">6:15 am</option>
-                          <option value="6:30 am">6:30 am</option>
-                          <option value="6:45 am">6:45 am</option>
-                          <option value="7:00 am">7:00 am</option>
-                          <option value="7:15 am">7:15 am</option>
-                          <option value="7:30 am">7:30 am</option>
-                          <option value="7:45 am">7:45 am</option>
-                          <option value="8:00 am">8:00 am</option>
-                          <option value="8:15 am">8:15 am</option>
-                          <option value="8:30 am">8:30 am</option>
-                          <option value="8:45 am">8:45 am</option>
-                          <option value="9:00 am">9:00 am</option>
-                          <option value="9:15 am">9:15 am</option>
-                          <option value="9:30 am">9:30 am</option>
-                          <option value="9:45 am">9:45 am</option>
-                          <option value="10:00 am">10:00 am</option>
-                          <option value="10:15 am">10:15 am</option>
-                          <option value="10:30 am">10:30 am</option>
-                          <option value="10:45 am">10:45 am</option>
-                          <option value="11:00 am">11:00 am</option>
-                          <option value="11:15 am">11:15 am</option>
-                          <option value="11:30 am">11:30 am</option>
-                          <option value="11:45 am">11:45 am</option>
-                          <option value="12:00 pm" selected="selected">
-                            12:00 pm
-                          </option>
-                          <option value="12:15 pm">12:15 pm</option>
-                          <option value="12:30 pm">12:30 pm</option>
-                          <option value="12:45 pm">12:45 pm</option>
-                          <option value="1:00 pm">1:00 pm</option>
-                          <option value="1:15 pm">1:15 pm</option>
-                          <option value="1:30 pm">1:30 pm</option>
-                          <option value="1:45 pm">1:45 pm</option>
-                          <option value="2:00 pm">2:00 pm</option>
-                          <option value="2:15 pm">2:15 pm</option>
-                          <option value="2:30 pm">2:30 pm</option>
-                          <option value="2:45 pm">2:45 pm</option>
-                          <option value="3:00 pm">3:00 pm</option>
-                          <option value="3:15 pm">3:15 pm</option>
-                          <option value="3:30 pm">3:30 pm</option>
-                          <option value="3:45 pm">3:45 pm</option>
-                          <option value="4:00 pm">4:00 pm</option>
-                          <option value="4:15 pm">4:15 pm</option>
-                          <option value="4:30 pm">4:30 pm</option>
-                          <option value="4:45 pm">4:45 pm</option>
-                          <option value="5:00 pm">5:00 pm</option>
-                          <option value="5:15 pm">5:15 pm</option>
-                          <option value="5:30 pm">5:30 pm</option>
-                          <option value="5:45 pm">5:45 pm</option>
-                          <option value="6:00 pm">6:00 pm</option>
-                          <option value="6:15 pm">6:15 pm</option>
-                          <option value="6:30 pm">6:30 pm</option>
-                          <option value="6:45 pm">6:45 pm</option>
-                          <option value="7:00 pm">7:00 pm</option>
-                          <option value="7:15 pm">7:15 pm</option>
-                          <option value="7:30 pm">7:30 pm</option>
-                          <option value="7:45 pm">7:45 pm</option>
-                          <option value="8:00 pm">8:00 pm</option>
-                          <option value="8:15 pm">8:15 pm</option>
-                          <option value="8:30 pm">8:30 pm</option>
-                          <option value="8:45 pm">8:45 pm</option>
-                          <option value="9:00 pm">9:00 pm</option>
-                          <option value="9:15 pm">9:15 pm</option>
-                          <option value="9:30 pm">9:30 pm</option>
-                          <option value="9:45 pm">9:45 pm</option>
-                          <option value="10:00 pm">10:00 pm</option>
-                          <option value="10:15 pm">10:15 pm</option>
-                          <option value="10:30 pm">10:30 pm</option>
-                          <option value="10:45 pm">10:45 pm</option>
-                          <option value="11:00 pm">11:00 pm</option>
-                          <option value="11:15 pm">11:15 pm</option>
-                          <option value="11:30 pm">11:30 pm</option>
-                          <option value="11:45 pm">11:45 pm</option>
-                        </select>
-                      </div>
-                    </div>
-                  </div>
-                  <div
-                    class="reservation-form__line reservation-form__set reservation-form__drop-off"
-                  >
-                    <div
-                      class="reservation-form__drop-off-location reservation-form__location"
-                    >
-                      <div class="reservation-form__field-inner">
-                        <label
-                          for="reservation-form__drop-off-location-select"
-                          class="reservation-form__label reservation-form__drop-off-location-label reservation-form__location-label"
-                          >Drop-off</label
-                        >
-                        <select
-                          name="drop-off-location"
-                          class="reservation-form__drop-off-location-select"
-                          id="reservation-form__drop-off-location-select"
-                          data-placeholder="Choisissez une location"
-                        >
-                          <option></option>
-                          <option value="17">New York Airport</option>
-                          <option value="18">Jersey City</option>
-                          <option value="19">Washington</option>
-                          <option value="20">Pittsburgh</option>
-                          <option value="21">San Francisco</option>
-                        </select>
-                      </div>
-                    </div>
-                    <div
-                      class="reservation-form__drop-off-date reservation-form__date"
-                    >
-                      <div class="reservation-form__field-inner">
-                        <label
-                          for="reservation-form__drop-off-date-input"
-                          class="reservation-form__label reservation-form__drop-off-date-label reservation-form__date-label"
-                          >Drop-off</label
-                        >
-                        <div class="reservation-form__date-wrapper">
-                          <input
-                            type="text"
-                            name="drop-off-date"
-                            readonly="readonly"
-                            placeholder="Choisissez une date"
-                            class="reservation-form__drop-off-date-input"
-                            id="reservation-form__drop-off-date-input"
-                            data-date-format="MM dd, yy"
-                          />
-                        </div>
-                      </div>
-                    </div>
-                    <div
-                      class="reservation-form__drop-off-time reservation-form__time"
-                    >
-                      <div class="reservation-form__field-inner">
-                        <select
-                          name="drop-off-time"
-                          class="reservation-form__drop-off-time-select"
-                          id="reservation-form__drop-off-time-select"
-                        >
-                          <option value="12:00 am">12:00 am</option>
-                          <option value="12:15 am">12:15 am</option>
-                          <option value="12:30 am">12:30 am</option>
-                          <option value="12:45 am">12:45 am</option>
-                          <option value="1:00 am">1:00 am</option>
-                          <option value="1:15 am">1:15 am</option>
-                          <option value="1:30 am">1:30 am</option>
-                          <option value="1:45 am">1:45 am</option>
-                          <option value="2:00 am">2:00 am</option>
-                          <option value="2:15 am">2:15 am</option>
-                          <option value="2:30 am">2:30 am</option>
-                          <option value="2:45 am">2:45 am</option>
-                          <option value="3:00 am">3:00 am</option>
-                          <option value="3:15 am">3:15 am</option>
-                          <option value="3:30 am">3:30 am</option>
-                          <option value="3:45 am">3:45 am</option>
-                          <option value="4:00 am">4:00 am</option>
-                          <option value="4:15 am">4:15 am</option>
-                          <option value="4:30 am">4:30 am</option>
-                          <option value="4:45 am">4:45 am</option>
-                          <option value="5:00 am">5:00 am</option>
-                          <option value="5:15 am">5:15 am</option>
-                          <option value="5:30 am">5:30 am</option>
-                          <option value="5:45 am">5:45 am</option>
-                          <option value="6:00 am">6:00 am</option>
-                          <option value="6:15 am">6:15 am</option>
-                          <option value="6:30 am">6:30 am</option>
-                          <option value="6:45 am">6:45 am</option>
-                          <option value="7:00 am">7:00 am</option>
-                          <option value="7:15 am">7:15 am</option>
-                          <option value="7:30 am">7:30 am</option>
-                          <option value="7:45 am">7:45 am</option>
-                          <option value="8:00 am">8:00 am</option>
-                          <option value="8:15 am">8:15 am</option>
-                          <option value="8:30 am">8:30 am</option>
-                          <option value="8:45 am">8:45 am</option>
-                          <option value="9:00 am">9:00 am</option>
-                          <option value="9:15 am">9:15 am</option>
-                          <option value="9:30 am">9:30 am</option>
-                          <option value="9:45 am">9:45 am</option>
-                          <option value="10:00 am">10:00 am</option>
-                          <option value="10:15 am">10:15 am</option>
-                          <option value="10:30 am">10:30 am</option>
-                          <option value="10:45 am">10:45 am</option>
-                          <option value="11:00 am">11:00 am</option>
-                          <option value="11:15 am">11:15 am</option>
-                          <option value="11:30 am">11:30 am</option>
-                          <option value="11:45 am">11:45 am</option>
-                          <option value="12:00 pm" selected="selected">
-                            12:00 pm
-                          </option>
-                          <option value="12:15 pm">12:15 pm</option>
-                          <option value="12:30 pm">12:30 pm</option>
-                          <option value="12:45 pm">12:45 pm</option>
-                          <option value="1:00 pm">1:00 pm</option>
-                          <option value="1:15 pm">1:15 pm</option>
-                          <option value="1:30 pm">1:30 pm</option>
-                          <option value="1:45 pm">1:45 pm</option>
-                          <option value="2:00 pm">2:00 pm</option>
-                          <option value="2:15 pm">2:15 pm</option>
-                          <option value="2:30 pm">2:30 pm</option>
-                          <option value="2:45 pm">2:45 pm</option>
-                          <option value="3:00 pm">3:00 pm</option>
-                          <option value="3:15 pm">3:15 pm</option>
-                          <option value="3:30 pm">3:30 pm</option>
-                          <option value="3:45 pm">3:45 pm</option>
-                          <option value="4:00 pm">4:00 pm</option>
-                          <option value="4:15 pm">4:15 pm</option>
-                          <option value="4:30 pm">4:30 pm</option>
-                          <option value="4:45 pm">4:45 pm</option>
-                          <option value="5:00 pm">5:00 pm</option>
-                          <option value="5:15 pm">5:15 pm</option>
-                          <option value="5:30 pm">5:30 pm</option>
-                          <option value="5:45 pm">5:45 pm</option>
-                          <option value="6:00 pm">6:00 pm</option>
-                          <option value="6:15 pm">6:15 pm</option>
-                          <option value="6:30 pm">6:30 pm</option>
-                          <option value="6:45 pm">6:45 pm</option>
-                          <option value="7:00 pm">7:00 pm</option>
-                          <option value="7:15 pm">7:15 pm</option>
-                          <option value="7:30 pm">7:30 pm</option>
-                          <option value="7:45 pm">7:45 pm</option>
-                          <option value="8:00 pm">8:00 pm</option>
-                          <option value="8:15 pm">8:15 pm</option>
-                          <option value="8:30 pm">8:30 pm</option>
-                          <option value="8:45 pm">8:45 pm</option>
-                          <option value="9:00 pm">9:00 pm</option>
-                          <option value="9:15 pm">9:15 pm</option>
-                          <option value="9:30 pm">9:30 pm</option>
-                          <option value="9:45 pm">9:45 pm</option>
-                          <option value="10:00 pm">10:00 pm</option>
-                          <option value="10:15 pm">10:15 pm</option>
-                          <option value="10:30 pm">10:30 pm</option>
-                          <option value="10:45 pm">10:45 pm</option>
-                          <option value="11:00 pm">11:00 pm</option>
-                          <option value="11:15 pm">11:15 pm</option>
-                          <option value="11:30 pm">11:30 pm</option>
-                          <option value="11:45 pm">11:45 pm</option>
-                        </select>
-                      </div>
-                    </div>
-                  </div>
-                  <div
-                    class="reservation-form__line reservation-form__required-notice"
-                  >
+                <div class="reservation-form__line reservation-form__set reservation-form__drop-off">
+                  <div class="reservation-form__drop-off-location reservation-form__location">
                     <div class="reservation-form__field-inner">
-                      <div class="reservation-form__required-notice-box">
-                        Please fill in all required fields.
+                      <label for="reservation-form__drop-off-location-select"
+                        class="reservation-form__label reservation-form__drop-off-location-label reservation-form__location-label">Drop-off</label>
+                      <select name="drop-off-location" class="reservation-form__drop-off-location-select"
+                        id="reservation-form__drop-off-location-select" data-placeholder="Choisissez une location">
+                        <option></option>
+                        <option value="17">New York Airport</option>
+                        <option value="18">Jersey City</option>
+                        <option value="19">Washington</option>
+                        <option value="20">Pittsburgh</option>
+                        <option value="21">San Francisco</option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="reservation-form__drop-off-date reservation-form__date">
+                    <div class="reservation-form__field-inner">
+                      <label for="reservation-form__drop-off-date-input"
+                        class="reservation-form__label reservation-form__drop-off-date-label reservation-form__date-label">Drop-off</label>
+                      <div class="reservation-form__date-wrapper">
+                        <input type="text" name="drop-off-date" readonly="readonly" placeholder="Choisissez une date"
+                          class="reservation-form__drop-off-date-input" id="reservation-form__drop-off-date-input"
+                          data-date-format="MM dd, yy" />
                       </div>
                     </div>
                   </div>
-                  <div class="reservation-form__line reservation-form__submit">
+                  <div class="reservation-form__drop-off-time reservation-form__time">
                     <div class="reservation-form__field-inner">
-                      <input
-                        type="submit"
-                        class="reservation-form__submit-button"
-                        id="reservation-form__submit-button"
-                        value="Poursuivre la réservation"
-                      />
-                      <img
-                        src="data:image/svg+xml;utf8,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 48 48%22 width=%2228%22 height=%2228%22%3E
+                      <select name="drop-off-time" class="reservation-form__drop-off-time-select"
+                        id="reservation-form__drop-off-time-select">
+                        <option value="12:00 am">12:00 am</option>
+                        <option value="12:15 am">12:15 am</option>
+                        <option value="12:30 am">12:30 am</option>
+                        <option value="12:45 am">12:45 am</option>
+                        <option value="1:00 am">1:00 am</option>
+                        <option value="1:15 am">1:15 am</option>
+                        <option value="1:30 am">1:30 am</option>
+                        <option value="1:45 am">1:45 am</option>
+                        <option value="2:00 am">2:00 am</option>
+                        <option value="2:15 am">2:15 am</option>
+                        <option value="2:30 am">2:30 am</option>
+                        <option value="2:45 am">2:45 am</option>
+                        <option value="3:00 am">3:00 am</option>
+                        <option value="3:15 am">3:15 am</option>
+                        <option value="3:30 am">3:30 am</option>
+                        <option value="3:45 am">3:45 am</option>
+                        <option value="4:00 am">4:00 am</option>
+                        <option value="4:15 am">4:15 am</option>
+                        <option value="4:30 am">4:30 am</option>
+                        <option value="4:45 am">4:45 am</option>
+                        <option value="5:00 am">5:00 am</option>
+                        <option value="5:15 am">5:15 am</option>
+                        <option value="5:30 am">5:30 am</option>
+                        <option value="5:45 am">5:45 am</option>
+                        <option value="6:00 am">6:00 am</option>
+                        <option value="6:15 am">6:15 am</option>
+                        <option value="6:30 am">6:30 am</option>
+                        <option value="6:45 am">6:45 am</option>
+                        <option value="7:00 am">7:00 am</option>
+                        <option value="7:15 am">7:15 am</option>
+                        <option value="7:30 am">7:30 am</option>
+                        <option value="7:45 am">7:45 am</option>
+                        <option value="8:00 am">8:00 am</option>
+                        <option value="8:15 am">8:15 am</option>
+                        <option value="8:30 am">8:30 am</option>
+                        <option value="8:45 am">8:45 am</option>
+                        <option value="9:00 am">9:00 am</option>
+                        <option value="9:15 am">9:15 am</option>
+                        <option value="9:30 am">9:30 am</option>
+                        <option value="9:45 am">9:45 am</option>
+                        <option value="10:00 am">10:00 am</option>
+                        <option value="10:15 am">10:15 am</option>
+                        <option value="10:30 am">10:30 am</option>
+                        <option value="10:45 am">10:45 am</option>
+                        <option value="11:00 am">11:00 am</option>
+                        <option value="11:15 am">11:15 am</option>
+                        <option value="11:30 am">11:30 am</option>
+                        <option value="11:45 am">11:45 am</option>
+                        <option value="12:00 pm" selected="selected">
+                          12:00 pm
+                        </option>
+                        <option value="12:15 pm">12:15 pm</option>
+                        <option value="12:30 pm">12:30 pm</option>
+                        <option value="12:45 pm">12:45 pm</option>
+                        <option value="1:00 pm">1:00 pm</option>
+                        <option value="1:15 pm">1:15 pm</option>
+                        <option value="1:30 pm">1:30 pm</option>
+                        <option value="1:45 pm">1:45 pm</option>
+                        <option value="2:00 pm">2:00 pm</option>
+                        <option value="2:15 pm">2:15 pm</option>
+                        <option value="2:30 pm">2:30 pm</option>
+                        <option value="2:45 pm">2:45 pm</option>
+                        <option value="3:00 pm">3:00 pm</option>
+                        <option value="3:15 pm">3:15 pm</option>
+                        <option value="3:30 pm">3:30 pm</option>
+                        <option value="3:45 pm">3:45 pm</option>
+                        <option value="4:00 pm">4:00 pm</option>
+                        <option value="4:15 pm">4:15 pm</option>
+                        <option value="4:30 pm">4:30 pm</option>
+                        <option value="4:45 pm">4:45 pm</option>
+                        <option value="5:00 pm">5:00 pm</option>
+                        <option value="5:15 pm">5:15 pm</option>
+                        <option value="5:30 pm">5:30 pm</option>
+                        <option value="5:45 pm">5:45 pm</option>
+                        <option value="6:00 pm">6:00 pm</option>
+                        <option value="6:15 pm">6:15 pm</option>
+                        <option value="6:30 pm">6:30 pm</option>
+                        <option value="6:45 pm">6:45 pm</option>
+                        <option value="7:00 pm">7:00 pm</option>
+                        <option value="7:15 pm">7:15 pm</option>
+                        <option value="7:30 pm">7:30 pm</option>
+                        <option value="7:45 pm">7:45 pm</option>
+                        <option value="8:00 pm">8:00 pm</option>
+                        <option value="8:15 pm">8:15 pm</option>
+                        <option value="8:30 pm">8:30 pm</option>
+                        <option value="8:45 pm">8:45 pm</option>
+                        <option value="9:00 pm">9:00 pm</option>
+                        <option value="9:15 pm">9:15 pm</option>
+                        <option value="9:30 pm">9:30 pm</option>
+                        <option value="9:45 pm">9:45 pm</option>
+                        <option value="10:00 pm">10:00 pm</option>
+                        <option value="10:15 pm">10:15 pm</option>
+                        <option value="10:30 pm">10:30 pm</option>
+                        <option value="10:45 pm">10:45 pm</option>
+                        <option value="11:00 pm">11:00 pm</option>
+                        <option value="11:15 pm">11:15 pm</option>
+                        <option value="11:30 pm">11:30 pm</option>
+                        <option value="11:45 pm">11:45 pm</option>
+                      </select>
+                    </div>
+                  </div>
+                </div>
+                <div class="reservation-form__line reservation-form__required-notice">
+                  <div class="reservation-form__field-inner">
+                    <div class="reservation-form__required-notice-box">
+                      Please fill in all required fields.
+                    </div>
+                  </div>
+                </div>
+                <div class="reservation-form__line reservation-form__submit">
+                  <div class="reservation-form__field-inner">
+                    <input type="submit" class="reservation-form__submit-button" id="reservation-form__submit-button"
+                      value="Poursuivre la réservation" />
+                    <img src="data:image/svg+xml;utf8,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 48 48%22 width=%2228%22 height=%2228%22%3E
 %3Ccircle class=%22path%22 cx=%2224%22 cy=%2224%22 r=%2220%22 fill=%22none%22 stroke=%22%23fff%22 stroke-width=%224%22%3E
   %3Canimate attributeName=%22stroke-dasharray%22 attributeType=%22XML%22 from=%221,200%22 to=%2289,200%22 values=%221,200; 89,200; 89,200%22 keyTimes=%220; 0.5; 1%22 dur=%221.5s%22 repeatCount=%22indefinite%22 /%3E
   %3Canimate attributeName=%22stroke-dashoffset%22 attributeType=%22XML%22 from=%220%22 to=%22-124%22 values=%220; -35; -124%22 keyTimes=%220; 0.5; 1%22 dur=%221.5s%22 repeatCount=%22indefinite%22 /%3E
   %3CanimateTransform attributeName=%22transform%22 attributeType=%22XML%22 type=%22rotate%22 from=%220 24 24%22 to=%22360 24 24%22 dur=%223s%22 repeatCount=%22indefinite%22/%3E
 %3C/circle%3E
-%3C/svg%3E"
-                        class="ajax-loading"
-                        alt=""
-                      />
-                    </div>
+%3C/svg%3E" class="ajax-loading" alt="" />
                   </div>
                 </div>
-              </form>
-              <div class="booking-success-message" id="booking-success-message">
-                <p>
-                  Thank you for your booking. Our manager will reach you out
-                  within 24 hours to figure out all details and confirm your
-                  reservation.
-                </p>
               </div>
+            </form>
+            <div class="booking-success-message" id="booking-success-message">
+              <p>
+                Thank you for your booking. Our manager will reach you out within 24 hours to figure out all details and
+                confirm your reservation.
+              </p>
             </div>
           </div>
         </div>
       </div>
-      <div class="your-booking" id="your-booking">
-        <div class="om-container">
-          <div class="om-container__inner">
-            <div class="your-booking__titles">
-              <h2 class="your-booking__title">Your Booking</h2>
-              <div class="h-subtitle your-booking__subtitle">
-                Please, check your booking
-              </div>
+    </div>
+    <div class="your-booking" id="your-booking">
+      <div class="om-container">
+        <div class="om-container__inner">
+          <div class="your-booking__titles">
+            <h2 class="your-booking__title">Your Booking</h2>
+            <div class="h-subtitle your-booking__subtitle">
+              Please, check your booking
             </div>
           </div>
-          <div class="your-booking__details"></div>
-          <div class="your-booking__personal">
-            <div class="content-pane">
-              <div class="om-container__inner">
-                <h4 class="your-booking__personal-title">
-                  Personal Information
-                </h4>
-                <div
-                  role="form"
-                  class="wpcf7"
-                  id="wpcf7-f4-o1"
-                  lang="en-US"
-                  dir="ltr"
-                >
-                  <div class="screen-reader-response"></div>
-                  <form
-                    action="/wheelsberry/#wpcf7-f4-o1"
-                    method="post"
-                    class="wpcf7-form demo"
-                    novalidate="novalidate"
-                  >
-                    <div style="display: none">
-                      <input type="hidden" name="_wpcf7" value="4" />
-                      <input
-                        type="hidden"
-                        name="_wpcf7_version"
-                        value="4.5.1"
-                      />
-                      <input type="hidden" name="_wpcf7_locale" value="en_US" />
-                      <input
-                        type="hidden"
-                        name="_wpcf7_unit_tag"
-                        value="wpcf7-f4-o1"
-                      />
-                      <input type="hidden" name="_wpnonce" value="c630ad5d43" />
-                    </div>
-                    <div class="wpcf7-form-elements">
-                      <p class="one-third">
-                        <label
-                          >First Name
-                          <span class="wpcf7-form-required-label"
-                            >*</span
-                          ></label
-                        ><br />
-                        <span class="wpcf7-form-control-wrap first-name"
-                          ><input
-                            type="text"
-                            name="first-name"
-                            value=""
-                            size="40"
-                            class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required"
-                            aria-required="true"
-                            aria-invalid="false"
-                            placeholder="Enter your first name"
-                        /></span>
-                      </p>
-                      <p class="one-third">
-                        <label
-                          >Last Name
-                          <span class="wpcf7-form-required-label"
-                            >*</span
-                          ></label
-                        ><br />
-                        <span class="wpcf7-form-control-wrap last-name"
-                          ><input
-                            type="text"
-                            name="last-name"
-                            value=""
-                            size="40"
-                            class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required"
-                            aria-required="true"
-                            aria-invalid="false"
-                            placeholder="Enter your last name"
-                        /></span>
-                      </p>
-                      <p class="one-third">
-                        <label
-                          >Age
-                          <span class="wpcf7-form-required-label"
-                            >*</span
-                          ></label
-                        ><br />
-                        <span class="wpcf7-form-control-wrap age"
-                          ><input
-                            type="number"
-                            name="age"
-                            value="21"
-                            class="wpcf7-form-control wpcf7-number wpcf7-validates-as-number"
-                            min="1"
-                            max="150"
-                            aria-invalid="false"
-                        /></span>
-                      </p>
-                      <p class="one-half">
-                        <label
-                          >Phone Number
-                          <span class="wpcf7-form-required-label"
-                            >*</span
-                          ></label
-                        ><br />
-                        <span class="wpcf7-form-control-wrap phone"
-                          ><input
-                            type="text"
-                            name="phone"
-                            value=""
-                            size="40"
-                            class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required"
-                            aria-required="true"
-                            aria-invalid="false"
-                            placeholder="Enter your phone number"
-                        /></span>
-                      </p>
-                      <p class="one-half">
-                        <label
-                          >Email
-                          <span class="wpcf7-form-required-label"
-                            >*</span
-                          ></label
-                        ><br />
-                        <span class="wpcf7-form-control-wrap email"
-                          ><input
-                            type="email"
-                            name="email"
-                            value=""
-                            size="40"
-                            class="wpcf7-form-control wpcf7-text wpcf7-email wpcf7-validates-as-required wpcf7-validates-as-email"
-                            aria-required="true"
-                            aria-invalid="false"
-                            placeholder="Enter your email address"
-                        /></span>
-                      </p>
-                      <p>
-                        <label
-                          >Address
-                          <span class="wpcf7-form-required-label"
-                            >*</span
-                          ></label
-                        ><br />
-                        <span class="wpcf7-form-control-wrap address"
-                          ><input
-                            type="text"
-                            name="address"
-                            value=""
-                            size="40"
-                            class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required"
-                            aria-required="true"
-                            aria-invalid="false"
-                            placeholder="Enter your address"
-                        /></span>
-                      </p>
-                      <p class="one-third">
-                        <label
-                          >City
-                          <span class="wpcf7-form-required-label"
-                            >*</span
-                          ></label
-                        ><br />
-                        <span class="wpcf7-form-control-wrap city"
-                          ><input
-                            type="text"
-                            name="city"
-                            value=""
-                            size="40"
-                            class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required"
-                            aria-required="true"
-                            aria-invalid="false"
-                            placeholder="Enter your city"
-                        /></span>
-                      </p>
-                      <p class="one-third">
-                        <label
-                          >Country
-                          <span class="wpcf7-form-required-label"
-                            >*</span
-                          ></label
-                        ><br />
-                        <span class="wpcf7-form-control-wrap country"
-                          ><input
-                            type="text"
-                            name="country"
-                            value=""
-                            size="40"
-                            class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required"
-                            aria-required="true"
-                            aria-invalid="false"
-                            placeholder="Enter your country"
-                        /></span>
-                      </p>
-                      <p class="one-third">
-                        <label
-                          >Zip Code
-                          <span class="wpcf7-form-required-label"
-                            >*</span
-                          ></label
-                        ><br />
-                        <span class="wpcf7-form-control-wrap zip-code"
-                          ><input
-                            type="text"
-                            name="zip-code"
-                            value=""
-                            size="40"
-                            class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required"
-                            aria-required="true"
-                            aria-invalid="false"
-                            placeholder="Enter your zip code"
-                        /></span>
-                      </p>
-                      <p class="submit">
-                        <input
-                          type="submit"
-                          value="Book Now"
-                          class="wpcf7-form-control wpcf7-submit"
-                        />
-                      </p>
-                    </div>
-                    <div class="wpcf7-response-output wpcf7-display-none"></div>
-                  </form>
-                </div>
+        </div>
+        <div class="your-booking__details"></div>
+        <div class="your-booking__personal">
+          <div class="content-pane">
+            <div class="om-container__inner">
+              <h4 class="your-booking__personal-title">
+                Personal Information
+              </h4>
+              <div role="form" class="wpcf7" id="wpcf7-f4-o1" lang="en-US" dir="ltr">
+                <div class="screen-reader-response"></div>
+                <form action="/wheelsberry/#wpcf7-f4-o1" method="post" class="wpcf7-form demo" novalidate="novalidate">
+                  <div style="display: none">
+                    <input type="hidden" name="_wpcf7" value="4" />
+                    <input type="hidden" name="_wpcf7_version" value="4.5.1" />
+                    <input type="hidden" name="_wpcf7_locale" value="en_US" />
+                    <input type="hidden" name="_wpcf7_unit_tag" value="wpcf7-f4-o1" />
+                    <input type="hidden" name="_wpnonce" value="c630ad5d43" />
+                  </div>
+                  <div class="wpcf7-form-elements">
+                    <p class="one-third">
+                      <label>First Name
+                        <span class="wpcf7-form-required-label">*</span></label><br />
+                      <span class="wpcf7-form-control-wrap first-name"><input type="text" name="first-name" value=""
+                          size="40" class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required"
+                          aria-required="true" aria-invalid="false" placeholder="Enter your first name" /></span>
+                    </p>
+                    <p class="one-third">
+                      <label>Last Name
+                        <span class="wpcf7-form-required-label">*</span></label><br />
+                      <span class="wpcf7-form-control-wrap last-name"><input type="text" name="last-name" value=""
+                          size="40" class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required"
+                          aria-required="true" aria-invalid="false" placeholder="Enter your last name" /></span>
+                    </p>
+                    <p class="one-third">
+                      <label>Age
+                        <span class="wpcf7-form-required-label">*</span></label><br />
+                      <span class="wpcf7-form-control-wrap age"><input type="number" name="age" value="21"
+                          class="wpcf7-form-control wpcf7-number wpcf7-validates-as-number" min="1" max="150"
+                          aria-invalid="false" /></span>
+                    </p>
+                    <p class="one-half">
+                      <label>Phone Number
+                        <span class="wpcf7-form-required-label">*</span></label><br />
+                      <span class="wpcf7-form-control-wrap phone"><input type="text" name="phone" value="" size="40"
+                          class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required" aria-required="true"
+                          aria-invalid="false" placeholder="Enter your phone number" /></span>
+                    </p>
+                    <p class="one-half">
+                      <label>Email
+                        <span class="wpcf7-form-required-label">*</span></label><br />
+                      <span class="wpcf7-form-control-wrap email"><input type="email" name="email" value="" size="40"
+                          class="wpcf7-form-control wpcf7-text wpcf7-email wpcf7-validates-as-required wpcf7-validates-as-email"
+                          aria-required="true" aria-invalid="false" placeholder="Enter your email address" /></span>
+                    </p>
+                    <p>
+                      <label>Address
+                        <span class="wpcf7-form-required-label">*</span></label><br />
+                      <span class="wpcf7-form-control-wrap address"><input type="text" name="address" value="" size="40"
+                          class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required" aria-required="true"
+                          aria-invalid="false" placeholder="Enter your address" /></span>
+                    </p>
+                    <p class="one-third">
+                      <label>City
+                        <span class="wpcf7-form-required-label">*</span></label><br />
+                      <span class="wpcf7-form-control-wrap city"><input type="text" name="city" value="" size="40"
+                          class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required" aria-required="true"
+                          aria-invalid="false" placeholder="Enter your city" /></span>
+                    </p>
+                    <p class="one-third">
+                      <label>Country
+                        <span class="wpcf7-form-required-label">*</span></label><br />
+                      <span class="wpcf7-form-control-wrap country"><input type="text" name="country" value="" size="40"
+                          class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required" aria-required="true"
+                          aria-invalid="false" placeholder="Enter your country" /></span>
+                    </p>
+                    <p class="one-third">
+                      <label>Zip Code
+                        <span class="wpcf7-form-required-label">*</span></label><br />
+                      <span class="wpcf7-form-control-wrap zip-code"><input type="text" name="zip-code" value=""
+                          size="40" class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required"
+                          aria-required="true" aria-invalid="false" placeholder="Enter your zip code" /></span>
+                    </p>
+                    <p class="submit">
+                      <input type="submit" value="Book Now" class="wpcf7-form-control wpcf7-submit" />
+                    </p>
+                  </div>
+                  <div class="wpcf7-response-output wpcf7-display-none"></div>
+                </form>
               </div>
             </div>
           </div>
         </div>
       </div>
     </div>
-    <div class="content">
-      <div class="content-columns om-container">
-        <div class="content-columns__content">
-          <div class="content-columns__content-inner">
-            <article>
-              <div
-                class="post-9 page type-page status-publish hentry"
-                id="post-9"
-              >
-                <div
-                  id="services"
-                  class="vc_row wpb_row vc_row-fluid om-container vc_row-full-width"
-                >
-                  <div class="om-container">
-                    <div class="wpb_column vc_column_container vc_col-sm-12">
-                      <div class="vc_column-inner">
-                        <div class="wpb_wrapper">
-                          <div class="vc_custom_heading">
-                            <h2 style="text-align: center">Nos Services</h2>
-                            <div
-                              class="vc_custom_heading__additional"
-                              style="text-align: center"
-                            >
-                              un parmi les meilleurs services au monde
-                            </div>
+  </div>
+  <div class="content">
+    <div class="content-columns om-container">
+      <div class="content-columns__content">
+        <div class="content-columns__content-inner">
+          <article>
+            <div class="post-9 page type-page status-publish hentry" id="post-9">
+              <div id="services" class="vc_row wpb_row vc_row-fluid om-container vc_row-full-width">
+                <div class="om-container">
+                  <div class="wpb_column vc_column_container vc_col-sm-12">
+                    <div class="vc_column-inner">
+                      <div class="wpb_wrapper">
+                        <div class="vc_custom_heading">
+                          <h2 style="text-align: center">Nos Services</h2>
+                          <div class="vc_custom_heading__additional" style="text-align: center">
+                            un parmi les meilleurs services au monde
                           </div>
+                        </div>
 
-                          <div
-                            class="vc_om-max-width om-mw-align-center"
-                            style="max-width: 960px"
-                          >
-                            <div
-                              class="vc_om-services wpb_content_element owl-carousel"
-                              data-top-padding="250"
-                              data-bottom-padding="100"
-                            >
-                              <div
-                                class="om-services__item"
-                                style="
+                        <div class="vc_om-max-width om-mw-align-center" style="max-width: 960px">
+                          <div class="vc_om-services wpb_content_element owl-carousel" data-top-padding="250"
+                            data-bottom-padding="100">
+                            <div class="om-services__item" style="
                                   background-image: url(images/SHUTTERSTOCK_84012001.jpg);
                                   background-size: contain;
-                                "
-                              >
-                                <div class="om-services__pane">
-                                  <h3 class="om-services__title">
-                                    Chauffeur Drive
-                                  </h3>
-                                  <div class="om-services__description">
-                                    <p>
-                                      Démarrez votre voyage avec le luxe d'un
-                                      transfert avec chauffeur. Nos chauffeurs
-                                      peuvent vous attendre à votre arrivée à
-                                      votre destination et vous ramener à
-                                      l'aéroport pour votre vol de retour.
-                                    </p>
-                                  </div>
-                                  <a href="" class="om-services__link"></a>
+                                ">
+                              <div class="om-services__pane">
+                                <h3 class="om-services__title">
+                                  Chauffeur Drive
+                                </h3>
+                                <div class="om-services__description">
+                                  <p>
+                                    Démarrez votre voyage avec le luxe d'un transfert avec chauffeur. Nos chauffeurs
+                                    peuvent vous attendre à votre arrivée à votre destination et vous ramener à
+                                    l'aéroport pour votre vol de retour.
+                                  </p>
                                 </div>
+                                <a href="" class="om-services__link"></a>
                               </div>
+                            </div>
 
-                              <div
-                                class="om-services__item"
-                                style="
+                            <div class="om-services__item" style="
                                   background-image: url(images/SHUTTERSTOCK_111951167.jpg);
                                   background-size: contain;
-                                "
-                              >
-                                <div class="om-services__pane">
-                                  <h3 class="om-services__title">
-                                    Plans de carburant
-                                  </h3>
-                                  <div class="om-services__description">
-                                    <p>
-                                      Nous proposons plusieurs options pratiques
-                                      de plan de carburant pour la location de
-                                      voitures. Vous pouvez payer à l'avance
-                                      pour un plein de carburant et ramener la
-                                      voiture vide, ou simplement acheter un
-                                      plein de carburant juste avant de rendre
-                                      la voiture à l'emplacement de retour.
-                                    </p>
-                                  </div>
-                                  <a href="" class="om-services__link"></a>
+                                ">
+                              <div class="om-services__pane">
+                                <h3 class="om-services__title">
+                                  Plans de carburant
+                                </h3>
+                                <div class="om-services__description">
+                                  <p>
+                                    Nous proposons plusieurs options pratiques de plan de carburant pour la location de
+                                    voitures. Vous pouvez payer à l'avance pour un plein de carburant et ramener la
+                                    voiture vide, ou simplement acheter un plein de carburant juste avant de rendre la
+                                    voiture
+                                    à l'emplacement de retour.
+                                  </p>
                                 </div>
+                                <a href="" class="om-services__link"></a>
                               </div>
+                            </div>
 
-                              <div
-                                class="om-services__item"
-                                style="
+                            <div class="om-services__item" style="
                                   background-image: url(images/SHUTTERSTOCK_59980393.jpg);
                                   background-size: contain;
-                                "
-                              >
-                                <div class="om-services__pane">
-                                  <h3 class="om-services__title">
-                                    Prise en charge et livraison
+                                ">
+                              <div class="om-services__pane">
+                                <h3 class="om-services__title">
+                                  Prise en charge et livraison
+                                </h3>
+                                <div class="om-services__description">
+                                  <p>
+                                    Juste quand vous pensiez que le service exceptionnel que vous recevez de notre part
+                                    ne pouvait pas être meilleur. Wheelsberry cars rental propose désormais un service
+                                    de prise en charge et de livraison des clients à votre bureau, votre domicile ou
+                                    votre
+                                    atelier de réparation.
+                                  </p>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="vc_empty_space" style="height: 40px">
+                          <span class="vc_empty_space_inner"></span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div id="about"
+                class="vc_row wpb_row vc_row-fluid om-container vc_custom_1470245913143 vc_row-has-fill vc_row-full-width">
+                <div class="om-container">
+                  <div class="wpb_column vc_column_container vc_col-sm-12">
+                    <div class="vc_column-inner">
+                      <div class="wpb_wrapper">
+                        <div class="vc_empty_space" style="height: 40px">
+                          <span class="vc_empty_space_inner"></span>
+                        </div>
+                        <div class="vc_custom_heading">
+                          <h2 style="text-align: center">À propos de nous</h2>
+                          <div class="vc_custom_heading__additional" style="text-align: center">
+                            Large choix de véhicules de luxe, sportifs et hybrides
+                          </div>
+                        </div>
+
+                        <div class="vc_om-about wpb_content_element owl-carousel">
+                          <div class="om-about__item">
+                            <div class="om-about__item-inner">
+                              <div class="om-about__img" style="
+                                    background-image: url(images/road-people-street-smartphone.jpg);
+                                  "></div>
+                              <div class="om-about__pane">
+                                <div class="om-about__pane-inner">
+                                  <h3 class="om-about__title">
+                                    Location de voitures
                                   </h3>
-                                  <div class="om-services__description">
+                                  <div class="om-about__media om-about__media--counter">
+                                    <div class="om-about__counter-value">
+                                      3500
+                                    </div>
+                                    <div class="om-about__counter-title">
+                                      Clients satisfaits
+                                    </div>
+                                  </div>
+                                  <div class="om-about__description">
                                     <p>
-                                      Juste quand vous pensiez que le service
-                                      exceptionnel que vous recevez de notre
-                                      part ne pouvait pas être meilleur.
-                                      Wheelsberry cars rental propose désormais
-                                      un service de prise en charge et de
-                                      livraison des clients à votre bureau,
-                                      votre domicile ou votre atelier de
-                                      réparation.
+                                      Présente des solutions sur mesure. Nous sommes à la pointe de l'innovation dans le
+                                      secteur de la location de voitures. Un service client de haute qualité et une
+                                      expérience de location fluide.
                                     </p>
                                   </div>
                                 </div>
                               </div>
                             </div>
                           </div>
-                          <div class="vc_empty_space" style="height: 40px">
-                            <span class="vc_empty_space_inner"></span>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div
-                  id="about"
-                  class="vc_row wpb_row vc_row-fluid om-container vc_custom_1470245913143 vc_row-has-fill vc_row-full-width"
-                >
-                  <div class="om-container">
-                    <div class="wpb_column vc_column_container vc_col-sm-12">
-                      <div class="vc_column-inner">
-                        <div class="wpb_wrapper">
-                          <div class="vc_empty_space" style="height: 40px">
-                            <span class="vc_empty_space_inner"></span>
-                          </div>
-                          <div class="vc_custom_heading">
-                            <h2 style="text-align: center">À propos de nous</h2>
-                            <div
-                              class="vc_custom_heading__additional"
-                              style="text-align: center"
-                            >
-                              Large choix de véhicules de luxe, sportifs et
-                              hybrides
-                            </div>
-                          </div>
-
-                          <div
-                            class="vc_om-about wpb_content_element owl-carousel"
-                          >
-                            <div class="om-about__item">
-                              <div class="om-about__item-inner">
-                                <div
-                                  class="om-about__img"
-                                  style="
-                                    background-image: url(images/road-people-street-smartphone.jpg);
-                                  "
-                                ></div>
-                                <div class="om-about__pane">
-                                  <div class="om-about__pane-inner">
-                                    <h3 class="om-about__title">
-                                      Location de voitures
-                                    </h3>
-                                    <div
-                                      class="om-about__media om-about__media--counter"
-                                    >
-                                      <div class="om-about__counter-value">
-                                        3500
-                                      </div>
-                                      <div class="om-about__counter-title">
-                                        Clients satisfaits
-                                      </div>
-                                    </div>
-                                    <div class="om-about__description">
-                                      <p>
-                                        Présente des solutions sur mesure. Nous
-                                        sommes à la pointe de l'innovation dans
-                                        le secteur de la location de voitures.
-                                        Un service client de haute qualité et
-                                        une expérience de location fluide.
-                                      </p>
-                                    </div>
-                                  </div>
-                                </div>
-                              </div>
-                            </div>
-                            <div class="om-about__item">
-                              <div class="om-about__item-inner">
-                                <div
-                                  class="om-about__img"
-                                  style="
+                          <div class="om-about__item">
+                            <div class="om-about__item-inner">
+                              <div class="om-about__img" style="
                                     background-image: url(images/photo-1451866961142-cd9f8c737e8b.jpg);
-                                  "
-                                ></div>
-                                <div class="om-about__pane">
-                                  <div class="om-about__pane-inner">
-                                    <h3 class="om-about__title">
-                                      À propos des voitures
-                                    </h3>
-                                    <div
-                                      class="om-about__media om-about__media--image"
-                                    >
-                                      <img src="images/map.png" alt="" />
-                                    </div>
-                                    <div class="om-about__description">
-                                      <p>
-                                        Une des plus grandes compagnies de
-                                        location de voitures au monde. Plus de
-                                        200 véhicules à travers le monde, dont
-                                        plus de 80 voitures haut de gamme.
-                                      </p>
-                                    </div>
-                                  </div>
-                                </div>
-                              </div>
-                            </div>
-                            <div class="om-about__item">
-                              <div class="om-about__item-inner">
-                                <div
-                                  class="om-about__img"
-                                  style="
-                                    background-image: url(images/about3-740x486.jpg);
-                                  "
-                                ></div>
-                                <div class="om-about__pane">
-                                  <div class="om-about__pane-inner">
-                                    <h3 class="om-about__title">
-                                      Les meilleurs tarifs de location de
-                                      voitures
-                                    </h3>
-                                    <div
-                                      class="om-about__media om-about__media--image"
-                                    >
-                                      <img src="images/icon-ok.png" alt="" />
-                                    </div>
-                                    <div class="om-about__description">
-                                      <p>
-                                        Une des plus grandes compagnies de
-                                        location de voitures au monde. Plus de
-                                        200 véhicules à travers le monde, dont
-                                        plus de 80 voitures haut de gamme.
-                                      </p>
-                                    </div>
-                                  </div>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                          <div class="vc_empty_space" style="height: 40px">
-                            <span class="vc_empty_space_inner"></span>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div
-                  id="testimonials"
-                  class="vc_row wpb_row vc_row-fluid om-container vc_custom_1470247299737 vc_row-has-fill vc_row-full-width"
-                >
-                  <div class="om-container">
-                    <div class="wpb_column vc_column_container vc_col-sm-12">
-                      <div class="vc_column-inner">
-                        <div class="wpb_wrapper">
-                          <div class="vc_empty_space" style="height: 40px">
-                            <span class="vc_empty_space_inner"></span>
-                          </div>
-                          <h2
-                            style="text-align: center"
-                            class="vc_custom_heading"
-                          >
-                            Qu'est-ce que les clients disent à notre sujet ?
-                          </h2>
-                          <div
-                            class="vc_om-testimonials wpb_content_element owl-carousel"
-                          >
-                            <div class="om-testimonials__item">
-                              <div class="om-testimonials__content">
-                                <p>
-                                  C'était notre première fois de louer chez NORD
-                                  PROMO CAR et nous avons été très satisfaits de
-                                  toute l'expérience. Leur prix était inférieur
-                                  à celui des autres compagnies. Notre
-                                  expérience de location a été bonne du début à
-                                  la fin, donc nous reviendrons à l'avenir.
-                                </p>
-                              </div>
-                              <div class="om-testimonials__author">
-                                Ahmed Belkhir, Tanger
-                              </div>
-                            </div>
-
-                            <div class="om-testimonials__item">
-                              <div class="om-testimonials__content">
-                                <p>
-                                  Le personnel professionnel qui sait ce qu'il
-                                  faut faire. Après une longue journée de
-                                  voyage, traiter avec des personnes amicales,
-                                  polies et efficaces fait toute la différence.
-                                </p>
-                              </div>
-                              <div class="om-testimonials__author">
-                                Sara Regraguy, Rabat
-                              </div>
-                            </div>
-                          </div>
-                          <div class="vc_empty_space" style="height: 40px">
-                            <span class="vc_empty_space_inner"></span>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div
-                  id="locations"
-                  class="vc_row wpb_row vc_row-fluid om-container vc_row-full-width vc_row-stretch-content vc_row-no-padding"
-                >
-                  <div class="om-container">
-                    <div class="wpb_column vc_column_container vc_col-sm-12">
-                      <div class="vc_column-inner">
-                        <div class="wpb_wrapper">
-                          <div class="vc_om-rental-locations">
-                            <div class="om-rental-locations__header">
-                              <div class="om-container">
-                                <div
-                                  class="om-rental-locations__header-inner om-container__inner"
-                                >
-                                  <h3 class="om-rental-locations__title">
-                                    Notre Station de location
+                                  "></div>
+                              <div class="om-about__pane">
+                                <div class="om-about__pane-inner">
+                                  <h3 class="om-about__title">
+                                    À propos des voitures
                                   </h3>
+                                  <div class="om-about__media om-about__media--image">
+                                    <img src="images/map.png" alt="" />
+                                  </div>
+                                  <div class="om-about__description">
+                                    <p>
+                                      Une des plus grandes compagnies de location de voitures au monde. Plus de 200
+                                      véhicules à travers le monde, dont plus de 80 voitures haut de gamme.
+                                    </p>
+                                  </div>
                                 </div>
                               </div>
                             </div>
-                            <!-- <div
+                          </div>
+                          <div class="om-about__item">
+                            <div class="om-about__item-inner">
+                              <div class="om-about__img" style="
+                                    background-image: url(images/about3-740x486.jpg);
+                                  "></div>
+                              <div class="om-about__pane">
+                                <div class="om-about__pane-inner">
+                                  <h3 class="om-about__title">
+                                    Les meilleurs tarifs de location de voitures
+                                  </h3>
+                                  <div class="om-about__media om-about__media--image">
+                                    <img src="images/icon-ok.png" alt="" />
+                                  </div>
+                                  <div class="om-about__description">
+                                    <p>
+                                      Une des plus grandes compagnies de location de voitures au monde. Plus de 200
+                                      véhicules à travers le monde, dont plus de 80 voitures haut de gamme.
+                                    </p>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="vc_empty_space" style="height: 40px">
+                          <span class="vc_empty_space_inner"></span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div id="testimonials"
+                class="vc_row wpb_row vc_row-fluid om-container vc_custom_1470247299737 vc_row-has-fill vc_row-full-width">
+                <div class="om-container">
+                  <div class="wpb_column vc_column_container vc_col-sm-12">
+                    <div class="vc_column-inner">
+                      <div class="wpb_wrapper">
+                        <div class="vc_empty_space" style="height: 40px">
+                          <span class="vc_empty_space_inner"></span>
+                        </div>
+                        <h2 style="text-align: center" class="vc_custom_heading">
+                          Qu'est-ce que les clients disent à notre sujet ?
+                        </h2>
+                        <div class="vc_om-testimonials wpb_content_element owl-carousel">
+                          <div class="om-testimonials__item">
+                            <div class="om-testimonials__content">
+                              <p>
+                                C'était notre première fois de louer chez NORD PROMO CAR et nous avons été très
+                                satisfaits de toute l'expérience. Leur prix était inférieur à celui des autres
+                                compagnies. Notre expérience de location a été bonne du début à la fin, donc nous
+                                reviendrons
+                                à l'avenir.
+                              </p>
+                            </div>
+                            <div class="om-testimonials__author">
+                              Ahmed Belkhir, Tanger
+                            </div>
+                          </div>
+
+                          <div class="om-testimonials__item">
+                            <div class="om-testimonials__content">
+                              <p>
+                                Le personnel professionnel qui sait ce qu'il faut faire. Après une longue journée de
+                                voyage, traiter avec des personnes amicales, polies et efficaces fait toute la
+                                différence.
+                              </p>
+                            </div>
+                            <div class="om-testimonials__author">
+                              Sara Regraguy, Rabat
+                            </div>
+                          </div>
+                        </div>
+                        <div class="vc_empty_space" style="height: 40px">
+                          <span class="vc_empty_space_inner"></span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div id="locations"
+                class="vc_row wpb_row vc_row-fluid om-container vc_row-full-width vc_row-stretch-content vc_row-no-padding">
+                <div class="om-container">
+                  <div class="wpb_column vc_column_container vc_col-sm-12">
+                    <div class="vc_column-inner">
+                      <div class="wpb_wrapper">
+                        <div class="vc_om-rental-locations">
+                          <div class="om-rental-locations__header">
+                            <div class="om-container">
+                              <div class="om-rental-locations__header-inner om-container__inner">
+                                <h3 class="om-rental-locations__title">
+                                  Notre Station de location
+                                </h3>
+                              </div>
+                            </div>
+                          </div>
+                          <!-- <div
                               class="om-rental-locations__map"
                               style="height: 370px"
                               data-map-zoom="16"
                               data-map-marker="http://demo.olevmedia.net/wheelsberry/wp-content/themes/wheelsberry/img/map-marker.png"
                             ></div> -->
-                            <iframe
-                              class="om-rental-locations__map"
-                              src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12947.202982191893!2d-5.8113449!3d35.7802706!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd0c7f547e4e3c9f%3A0x8b275e8cadc259b6!2sNord%20Promo%20Car!5e0!3m2!1sen!2sma!4v1684176678779!5m2!1sen!2sma"
-                              width="100%"
-                              height="550"
-                              style="border: 0"
-                              allowfullscreen=""
-                              loading="lazy"
-                              referrerpolicy="no-referrer-when-downgrade"
-                            ></iframe>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div
-                  id="contacts"
-                  class="vc_row wpb_row vc_row-fluid om-container vc_row-full-width"
-                >
-                  <div class="om-container">
-                    <div class="wpb_column vc_column_container vc_col-sm-12">
-                      <div class="vc_column-inner">
-                        <div class="wpb_wrapper">
-                          <div class="vc_empty_space" style="height: 40px">
-                            <span class="vc_empty_space_inner"></span>
-                          </div>
-                          <div class="vc_custom_heading">
-                            <h2 style="text-align: center">
-                              Centre des clients
-                            </h2>
-                            <div
-                              class="vc_custom_heading__additional"
-                              style="text-align: center"
-                            >
-                              N'hésitez pas à nous contacter si vous avez des
-                              questions.
-                            </div>
-                          </div>
-                          <div
-                            class="vc_om-persons wpb_content_element owl-carousel"
-                          >
-                            <div
-                              class="om-persons__item"
-                              style="margin-right: 32px; margin-top: 70px"
-                            >
-                              <div class="om-persons__content">
-                                <div class="om-persons__name">
-                                  <h4>Joseph Hancock</h4>
-                                </div>
-                                <div class="om-persons__post">
-                                  Responsable du support
-                                </div>
-                                <div class="om-persons__sep"></div>
-                                <div class="om-persons__phone">
-                                  <span class="om-persons__phone-label">
-                                    Téléphone:</span
-                                  >+1-202-555-0153
-                                </div>
-                                <div class="om-persons__email">
-                                  <span class="om-persons__email-label"
-                                    >Email:</span
-                                  ><a
-                                    href="/cdn-cgi/l/email-protection#7c1408080c46535316130f190c143c19041d110c1019521f1311"
-                                    ><span
-                                      class="__cf_email__"
-                                      data-cfemail="afc5c0dccadfc7efcad7cec2dfc3ca81ccc0c2"
-                                      >[email&nbsp;protected]</span
-                                    ></a
-                                  >
-                                </div>
-                              </div>
-                              <div
-                                class="om-persons__img om-persons__img--stand-out"
-                                style="margin-right: -32px; margin-top: -70px"
-                              >
-                                <div class="om-persons__img-inner">
-                                  <img
-                                    src="images/person1.png"
-                                    alt="Joseph Hancock"
-                                  />
-                                </div>
-                              </div>
-                            </div>
-                            <div
-                              class="om-persons__item"
-                              style="margin-right: 32px; margin-top: 70px"
-                            >
-                              <div class="om-persons__content">
-                                <div class="om-persons__name">
-                                  <h4>Matthew Thomas</h4>
-                                </div>
-                                <div class="om-persons__post">
-                                  Responsable du support
-                                </div>
-                                <div class="om-persons__sep"></div>
-                                <div class="om-persons__phone">
-                                  <span class="om-persons__phone-label">
-                                    Téléphone:</span
-                                  >+1-202-555-0108
-                                </div>
-                                <div class="om-persons__email">
-                                  <span class="om-persons__email-label"
-                                    >Email:</span
-                                  ><a
-                                    href="/cdn-cgi/l/email-protection#fe968a8a8ec4d1d1939f8a8a969b89be9b869f938e929bd09d9193"
-                                    ><span
-                                      class="__cf_email__"
-                                      data-cfemail="a6cbc7d2d2cec3d1e6c3dec7cbd6cac388c5c9cb"
-                                      >[email&nbsp;protected]</span
-                                    ></a
-                                  >
-                                </div>
-                              </div>
-                              <div
-                                class="om-persons__img om-persons__img--stand-out"
-                                style="margin-right: -32px; margin-top: -70px"
-                              >
-                                <div class="om-persons__img-inner">
-                                  <img
-                                    src="images/person2.png"
-                                    alt="Matthew Thomas"
-                                  />
-                                </div>
-                              </div>
-                            </div>
-                            <div
-                              class="om-persons__item"
-                              style="margin-right: 32px; margin-top: 70px"
-                            >
-                              <div class="om-persons__content">
-                                <div class="om-persons__name">
-                                  <h4>Bernice Bates</h4>
-                                </div>
-                                <div class="om-persons__post">
-                                  Responsable du support
-                                </div>
-                                <div class="om-persons__sep"></div>
-                                <div class="om-persons__phone">
-                                  <span class="om-persons__phone-label">
-                                    Téléphone:</span
-                                  >+1-202-555-0149
-                                </div>
-                                <div class="om-persons__email">
-                                  <span class="om-persons__email-label"
-                                    >Email:</span
-                                  ><a
-                                    href="/cdn-cgi/l/email-protection#aac2dededa908585c8cfd8c4c3c9cfeacfd2cbc7dac6cf84c9c5c7"
-                                    ><span
-                                      class="__cf_email__"
-                                      data-cfemail="37555245595e545277524f565a475b521954585a"
-                                      >[email&nbsp;protected]</span
-                                    ></a
-                                  >
-                                </div>
-                              </div>
-                              <div
-                                class="om-persons__img om-persons__img--stand-out"
-                                style="margin-right: -32px; margin-top: -70px"
-                              >
-                                <div class="om-persons__img-inner">
-                                  <img
-                                    src="images/person3.png"
-                                    alt="Bernice Bates"
-                                  />
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-
-                          <div class="vc_empty_space" style="height: 20px">
-                            <span class="vc_empty_space_inner"></span>
-                          </div>
+                          <iframe class="om-rental-locations__map"
+                            src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12947.202982191893!2d-5.8113449!3d35.7802706!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd0c7f547e4e3c9f%3A0x8b275e8cadc259b6!2sNord%20Promo%20Car!5e0!3m2!1sen!2sma!4v1684176678779!5m2!1sen!2sma"
+                            width="100%" height="550" style="border: 0" allowfullscreen="" loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade"></iframe>
                         </div>
                       </div>
                     </div>
                   </div>
                 </div>
               </div>
-            </article>
+              <div id="contacts" class="vc_row wpb_row vc_row-fluid om-container vc_row-full-width">
+                <div class="om-container">
+                  <div class="wpb_column vc_column_container vc_col-sm-12">
+                    <div class="vc_column-inner">
+                      <div class="wpb_wrapper">
+                        <div class="vc_empty_space" style="height: 40px">
+                          <span class="vc_empty_space_inner"></span>
+                        </div>
+                        <div class="vc_custom_heading">
+                          <h2 style="text-align: center">
+                            Centre des clients
+                          </h2>
+                          <div class="vc_custom_heading__additional" style="text-align: center">
+                            N'hésitez pas à nous contacter si vous avez des questions.
+                          </div>
+                        </div>
+                        <div class="vc_om-persons wpb_content_element owl-carousel">
+                          <div class="om-persons__item" style="margin-right: 32px; margin-top: 70px">
+                            <div class="om-persons__content">
+                              <div class="om-persons__name">
+                                <h4>Joseph Hancock</h4>
+                              </div>
+                              <div class="om-persons__post">
+                                Responsable du support
+                              </div>
+                              <div class="om-persons__sep"></div>
+                              <div class="om-persons__phone">
+                                <span class="om-persons__phone-label">
+                                  Téléphone:</span>+1-202-555-0153
+                              </div>
+                              <div class="om-persons__email">
+                                <span class="om-persons__email-label">Email:</span><a
+                                  href="/cdn-cgi/l/email-protection#7c1408080c46535316130f190c143c19041d110c1019521f1311"><span
+                                    class="__cf_email__"
+                                    data-cfemail="afc5c0dccadfc7efcad7cec2dfc3ca81ccc0c2">[email&nbsp;protected]</span></a>
+                              </div>
+                            </div>
+                            <div class="om-persons__img om-persons__img--stand-out"
+                              style="margin-right: -32px; margin-top: -70px">
+                              <div class="om-persons__img-inner">
+                                <img src="images/person1.png" alt="Joseph Hancock" />
+                              </div>
+                            </div>
+                          </div>
+                          <div class="om-persons__item" style="margin-right: 32px; margin-top: 70px">
+                            <div class="om-persons__content">
+                              <div class="om-persons__name">
+                                <h4>Matthew Thomas</h4>
+                              </div>
+                              <div class="om-persons__post">
+                                Responsable du support
+                              </div>
+                              <div class="om-persons__sep"></div>
+                              <div class="om-persons__phone">
+                                <span class="om-persons__phone-label">
+                                  Téléphone:</span>+1-202-555-0108
+                              </div>
+                              <div class="om-persons__email">
+                                <span class="om-persons__email-label">Email:</span><a
+                                  href="/cdn-cgi/l/email-protection#fe968a8a8ec4d1d1939f8a8a969b89be9b869f938e929bd09d9193"><span
+                                    class="__cf_email__"
+                                    data-cfemail="a6cbc7d2d2cec3d1e6c3dec7cbd6cac388c5c9cb">[email&nbsp;protected]</span></a>
+                              </div>
+                            </div>
+                            <div class="om-persons__img om-persons__img--stand-out"
+                              style="margin-right: -32px; margin-top: -70px">
+                              <div class="om-persons__img-inner">
+                                <img src="images/person2.png" alt="Matthew Thomas" />
+                              </div>
+                            </div>
+                          </div>
+                          <div class="om-persons__item" style="margin-right: 32px; margin-top: 70px">
+                            <div class="om-persons__content">
+                              <div class="om-persons__name">
+                                <h4>Bernice Bates</h4>
+                              </div>
+                              <div class="om-persons__post">
+                                Responsable du support
+                              </div>
+                              <div class="om-persons__sep"></div>
+                              <div class="om-persons__phone">
+                                <span class="om-persons__phone-label">
+                                  Téléphone:</span>+1-202-555-0149
+                              </div>
+                              <div class="om-persons__email">
+                                <span class="om-persons__email-label">Email:</span><a
+                                  href="/cdn-cgi/l/email-protection#aac2dededa908585c8cfd8c4c3c9cfeacfd2cbc7dac6cf84c9c5c7"><span
+                                    class="__cf_email__"
+                                    data-cfemail="37555245595e545277524f565a475b521954585a">[email&nbsp;protected]</span></a>
+                              </div>
+                            </div>
+                            <div class="om-persons__img om-persons__img--stand-out"
+                              style="margin-right: -32px; margin-top: -70px">
+                              <div class="om-persons__img-inner">
+                                <img src="images/person3.png" alt="Bernice Bates" />
+                              </div>
+                            </div>
+                          </div>
+                        </div>
 
-            <div class="om-container"></div>
+                        <div class="vc_empty_space" style="height: 20px">
+                          <span class="vc_empty_space_inner"></span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <div class="om-container"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <footer>
+    <div class="footer-widgets">
+      <div class="om-container">
+        <div class="om-container__inner">
+          <div class="om-columns">
+            <div class="footer-widgets__column om-column om-full">
+              <div id="text-2" class="footer-widget widget_text">
+                <div class="footer-widget-inner">
+                  <div class="textwidget">
+                    <div style="text-align: center">
+                      <h2>Contact</h2>
+                      <p>
+                        <b>Avez-vous des questions ou avez-vous besoin
+                          d'informations supplémentaires ?</b><br /> Address: 269 Bld. Zerktouni,Casablanca,Morocco
+                      </p>
+                      <p><b style="font-size: 200%">+212-655-013383</b></p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div id="wheelsberry_widget_cf7-2" class="footer-widget wheelsberry_widget_cf7">
+                <div class="footer-widget-inner">
+                  <div style="max-width: 640px; margin: 0 auto">
+                    <div role="form" class="wpcf7" id="wpcf7-f80-o2" lang="en-US" dir="ltr">
+                      <div class="screen-reader-response"></div>
+                      <form action="/wheelsberry/#wpcf7-f80-o2" method="post" class="wpcf7-form demo"
+                        novalidate="novalidate">
+                        <div style="display: none">
+                          <input type="hidden" name="_wpcf7" value="80" />
+                          <input type="hidden" name="_wpcf7_version" value="4.5.1" />
+                          <input type="hidden" name="_wpcf7_locale" value="en_US" />
+                          <input type="hidden" name="_wpcf7_unit_tag" value="wpcf7-f80-o2" />
+                          <input type="hidden" name="_wpnonce" value="c49619068c" />
+                        </div>
+                        <div class="wpcf7-form-elements">
+                          <p class="one-half">
+                            <span class="wpcf7-form-control-wrap name"><input type="text" name="name" value="" size="40"
+                                class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required" aria-required="true"
+                                aria-invalid="false" placeholder="Votre Prénom *" /></span>
+                          </p>
+                          <p class="one-half">
+                            <span class="wpcf7-form-control-wrap email"><input type="email" name="email" value=""
+                                size="40"
+                                class="wpcf7-form-control wpcf7-text wpcf7-email wpcf7-validates-as-required wpcf7-validates-as-email"
+                                aria-required="true" aria-invalid="false" placeholder="Votre email*" /></span>
+                          </p>
+                          <p>
+                            <span class="wpcf7-form-control-wrap message">
+                              <textarea name="message" cols="40" rows="6"
+                                class="wpcf7-form-control wpcf7-textarea wpcf7-validates-as-required"
+                                aria-required="true" aria-invalid="false" placeholder="Votre message*"></textarea>
+                            </span>
+                          </p>
+                          <p class="submit">
+                            <input type="submit" value="Send message" class="wpcf7-form-control wpcf7-submit" />
+                          </p>
+                        </div>
+                        <div class="wpcf7-response-output wpcf7-display-none"></div>
+                      </form>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
     </div>
-    <footer>
-      <div class="footer-widgets">
-        <div class="om-container">
-          <div class="om-container__inner">
-            <div class="om-columns">
-              <div class="footer-widgets__column om-column om-full">
-                <div id="text-2" class="footer-widget widget_text">
-                  <div class="footer-widget-inner">
-                    <div class="textwidget">
-                      <div style="text-align: center">
-                        <h2>Contact</h2>
-                        <p>
-                          <b
-                            >Avez-vous des questions ou avez-vous besoin
-                            d'informations supplémentaires ?</b
-                          ><br />
-                          Address: 269 Bld. Zerktouni,Casablanca,Morocco
-                        </p>
-                        <p><b style="font-size: 200%">+212-655-013383</b></p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div
-                  id="wheelsberry_widget_cf7-2"
-                  class="footer-widget wheelsberry_widget_cf7"
-                >
-                  <div class="footer-widget-inner">
-                    <div style="max-width: 640px; margin: 0 auto">
-                      <div
-                        role="form"
-                        class="wpcf7"
-                        id="wpcf7-f80-o2"
-                        lang="en-US"
-                        dir="ltr"
-                      >
-                        <div class="screen-reader-response"></div>
-                        <form
-                          action="/wheelsberry/#wpcf7-f80-o2"
-                          method="post"
-                          class="wpcf7-form demo"
-                          novalidate="novalidate"
-                        >
-                          <div style="display: none">
-                            <input type="hidden" name="_wpcf7" value="80" />
-                            <input
-                              type="hidden"
-                              name="_wpcf7_version"
-                              value="4.5.1"
-                            />
-                            <input
-                              type="hidden"
-                              name="_wpcf7_locale"
-                              value="en_US"
-                            />
-                            <input
-                              type="hidden"
-                              name="_wpcf7_unit_tag"
-                              value="wpcf7-f80-o2"
-                            />
-                            <input
-                              type="hidden"
-                              name="_wpnonce"
-                              value="c49619068c"
-                            />
-                          </div>
-                          <div class="wpcf7-form-elements">
-                            <p class="one-half">
-                              <span class="wpcf7-form-control-wrap name"
-                                ><input
-                                  type="text"
-                                  name="name"
-                                  value=""
-                                  size="40"
-                                  class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required"
-                                  aria-required="true"
-                                  aria-invalid="false"
-                                  placeholder="Votre Prénom *"
-                              /></span>
-                            </p>
-                            <p class="one-half">
-                              <span class="wpcf7-form-control-wrap email"
-                                ><input
-                                  type="email"
-                                  name="email"
-                                  value=""
-                                  size="40"
-                                  class="wpcf7-form-control wpcf7-text wpcf7-email wpcf7-validates-as-required wpcf7-validates-as-email"
-                                  aria-required="true"
-                                  aria-invalid="false"
-                                  placeholder="Votre email*"
-                              /></span>
-                            </p>
-                            <p>
-                              <span class="wpcf7-form-control-wrap message">
-                                <textarea
-                                  name="message"
-                                  cols="40"
-                                  rows="6"
-                                  class="wpcf7-form-control wpcf7-textarea wpcf7-validates-as-required"
-                                  aria-required="true"
-                                  aria-invalid="false"
-                                  placeholder="Votre message*"
-                                ></textarea>
-                              </span>
-                            </p>
-                            <p class="submit">
-                              <input
-                                type="submit"
-                                value="Send message"
-                                class="wpcf7-form-control wpcf7-submit"
-                              />
-                            </p>
-                          </div>
-                          <div
-                            class="wpcf7-response-output wpcf7-display-none"
-                          ></div>
-                        </form>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
+
+    <div class="sub-footer sub-footer--full">
+      <div class="om-container">
+        <div class="om-container__inner">
+          <div class="sub-footer__inner">
+            <div class="sub-footer-text">
+              <p>NORD PROMO CAR - ALL RIGHTS RESERVED</p>
+            </div>
+            <div class="footer-social-icons">
+              <a href="#blank" class="om-social-icon social-icon-facebook" title="Facebook" target="_blank"><i
+                  class="omfi omfi-facebook"></i></a><a href="#blank" class="om-social-icon social-icon-instagram"
+                title="Instagram" target="_blank"><i class="omfi omfi-instagram"></i></a><a href="#blank"
+                class="om-social-icon social-icon-skype" title="Skype" target="_blank"><i
+                  class="omfi omfi-skype"></i></a><a href="#blank" class="om-social-icon social-icon-twitter"
+                title="Twitter" target="_blank"><i class="omfi omfi-twitter"></i></a>
             </div>
           </div>
         </div>
       </div>
+    </div>
+  </footer>
+  <script data-cfasync="false" src="js/email-decode.min.js"></script>
+  <script>
+    (function (i, s, o, g, r, a, m) {
+      i["GoogleAnalyticsObject"] = r;
+      (i[r] =
+        i[r] ||
+        function () {
+          (i[r].q = i[r].q || []).push(arguments);
+        }),
+        (i[r].l = 1 * new Date());
+      (a = s.createElement(o)), (m = s.getElementsByTagName(o)[0]);
+      a.async = 1;
+      a.src = g;
+      m.parentNode.insertBefore(a, m);
+    })(
+      window,
+      document,
+      "script",
+      "//www.google-analytics.com/analytics.js",
+      "ga"
+    );
 
-      <div class="sub-footer sub-footer--full">
-        <div class="om-container">
-          <div class="om-container__inner">
-            <div class="sub-footer__inner">
-              <div class="sub-footer-text">
-                <p>NORD PROMO CAR - ALL RIGHTS RESERVED</p>
-              </div>
-              <div class="footer-social-icons">
-                <a
-                  href="#blank"
-                  class="om-social-icon social-icon-facebook"
-                  title="Facebook"
-                  target="_blank"
-                  ><i class="omfi omfi-facebook"></i></a
-                ><a
-                  href="#blank"
-                  class="om-social-icon social-icon-instagram"
-                  title="Instagram"
-                  target="_blank"
-                  ><i class="omfi omfi-instagram"></i></a
-                ><a
-                  href="#blank"
-                  class="om-social-icon social-icon-skype"
-                  title="Skype"
-                  target="_blank"
-                  ><i class="omfi omfi-skype"></i></a
-                ><a
-                  href="#blank"
-                  class="om-social-icon social-icon-twitter"
-                  title="Twitter"
-                  target="_blank"
-                  ><i class="omfi omfi-twitter"></i
-                ></a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </footer>
-    <script data-cfasync="false" src="js/email-decode.min.js"></script>
-    <script>
-      (function (i, s, o, g, r, a, m) {
-        i["GoogleAnalyticsObject"] = r;
-        (i[r] =
-          i[r] ||
-          function () {
-            (i[r].q = i[r].q || []).push(arguments);
-          }),
-          (i[r].l = 1 * new Date());
-        (a = s.createElement(o)), (m = s.getElementsByTagName(o)[0]);
-        a.async = 1;
-        a.src = g;
-        m.parentNode.insertBefore(a, m);
-      })(
-        window,
-        document,
-        "script",
-        "//www.google-analytics.com/analytics.js",
-        "ga"
-      );
-
-      ga("create", "UA-24399601-1", "auto");
-      ga("send", "pageview");
-    </script>
-    <script type="text/javascript">
-      (function (d, w, c) {
-        (w[c] = w[c] || []).push(function () {
-          try {
-            w.yaCounter34585525 = new Ya.Metrika({
-              id: 34585525,
-              clickmap: true,
-              trackLinks: true,
-              accurateTrackBounce: true,
-              webvisor: true,
-            });
-          } catch (e) {}
-        });
-
-        var n = d.getElementsByTagName("script")[0],
-          s = d.createElement("script"),
-          f = function () {
-            n.parentNode.insertBefore(s, n);
-          };
-        s.type = "text/javascript";
-        s.async = true;
-        s.src = "https://mc.yandex.ru/metrika/watch.js";
-
-        if (w.opera == "[object Opera]") {
-          d.addEventListener("DOMContentLoaded", f, false);
-        } else {
-          f();
-        }
-      })(document, window, "yandex_metrika_callbacks");
-    </script>
-    <noscript>
-      <div>
-        <img
-          src="https://mc.yandex.ru/watch/34585525"
-          style="position: absolute; left: -9999px"
-          alt=""
-        />
-      </div>
-    </noscript>
-    <div class="om-back-to-top"></div>
-    <link
-      rel="stylesheet"
-      property="stylesheet"
-      id="om_owl-carousel-css"
-      href="css/owl.carousel.css"
-      type="text/css"
-      media="all"
-    />
-    <link
-      rel="stylesheet"
-      property="stylesheet"
-      id="select2-css"
-      href="css/select2.min.css"
-      type="text/css"
-      media="all"
-    />
-    <script type="text/javascript" src="js/jquery.form.min.js"></script>
-    <script type="text/javascript">
-      /* <![CDATA[ */
-      var _wpcf7 = {
-        loaderUrl:
-          "data:image\/svg+xml;utf8,%3Csvg xmlns=%22http:\/\/www.w3.org\/2000\/svg%22 viewBox=%220 0 48 48%22 width=%2228%22 height=%2228%22%3E\r\n%3Ccircle class=%22path%22 cx=%2224%22 cy=%2224%22 r=%2220%22 fill=%22none%22 stroke=%22%23a8a8a8%22 stroke-width=%224%22%3E\r\n  %3Canimate attributeName=%22stroke-dasharray%22 attributeType=%22XML%22 from=%221,200%22 to=%2289,200%22 values=%221,200; 89,200; 89,200%22 keyTimes=%220; 0.5; 1%22 dur=%221.5s%22 repeatCount=%22indefinite%22 \/%3E\r\n  %3Canimate attributeName=%22stroke-dashoffset%22 attributeType=%22XML%22 from=%220%22 to=%22-124%22 values=%220; -35; -124%22 keyTimes=%220; 0.5; 1%22 dur=%221.5s%22 repeatCount=%22indefinite%22 \/%3E\r\n  %3CanimateTransform attributeName=%22transform%22 attributeType=%22XML%22 type=%22rotate%22 from=%220 24 24%22 to=%22360 24 24%22 dur=%223s%22 repeatCount=%22indefinite%22\/%3E\r\n%3C\/circle%3E\r\n%3C\/svg%3E",
-        recaptcha: {
-          messages: { empty: "Please verify that you are not a robot." },
-        },
-        sending: "Sending ...",
-        cached: "1",
-      };
-      /* ]]> */
-    </script>
-    <script type="text/javascript" src="js/scripts.js"></script>
-    <script type="text/javascript" src="js/preview.js"></script>
-    <script
-      type="text/javascript"
-      src="js/jquery.prettyPhoto.custom.min.js"
-    ></script>
-    <script type="text/javascript" src="js/jquery.nav.om.js"></script>
-    <script type="text/javascript" src="js/jquery.superfish.min.js"></script>
-    <script type="text/javascript">
-      /* <![CDATA[ */
-      var wheelsberryAjax = {
-        ajaxurl:
-          "http:\/\/demo.olevmedia.net\/wheelsberry\/wp-admin\/admin-ajax.php",
-      };
-      /* ]]> */
-    </script>
-    <script type="text/javascript" src="js/custom.js"></script>
-    <script type="text/javascript">
-      jQuery(function () {
-        lightbox_init({ social_tools: "", overlay_gallery: false });
-        om_sidebar_slide_init();
+    ga("create", "UA-24399601-1", "auto");
+    ga("send", "pageview");
+  </script>
+  <script type="text/javascript">
+    (function (d, w, c) {
+      (w[c] = w[c] || []).push(function () {
+        try {
+          w.yaCounter34585525 = new Ya.Metrika({
+            id: 34585525,
+            clickmap: true,
+            trackLinks: true,
+            accurateTrackBounce: true,
+            webvisor: true,
+          });
+        } catch (e) { }
       });
-    </script>
-    <script
-      type="text/javascript"
-      src="js/jquery.om.sticky.sidebar.js"
-    ></script>
-    <script type="text/javascript" src="js/comment-reply.min.js"></script>
-    <script type="text/javascript" src="js/wp-embed.min.js"></script>
-    <script type="text/javascript" src="js/owl.carousel.min.js"></script>
-    <script type="text/javascript" src="js/select2.min.js"></script>
-    <script type="text/javascript" src="js/core.min.js"></script>
-    <script type="text/javascript">
-      /* <![CDATA[ */
-      var objectL10n = {
-        monthNames: [
-          "January",
-          "February",
-          "March",
-          "April",
-          "May",
-          "June",
-          "July",
-          "August",
-          "September",
-          "October",
-          "November",
-          "December",
-        ],
-        monthNamesShort: [
-          "Jan",
-          "Feb",
-          "Mar",
-          "Apr",
-          "May",
-          "Jun",
-          "Jul",
-          "Aug",
-          "Sep",
-          "Oct",
-          "Nov",
-          "Dec",
-        ],
-        dayNames: [
-          "Sunday",
-          "Monday",
-          "Tuesday",
-          "Wednesday",
-          "Thursday",
-          "Friday",
-          "Saturday",
-        ],
-        dayNamesShort: ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"],
-        dayNamesMin: ["S", "M", "T", "W", "T", "F", "S"],
-        firstDay: "1",
-        isRTL: "",
-      };
-      /* ]]> */
-    </script>
-    <script type="text/javascript" src="js/datepicker.min.js"></script>
-    <script type="text/javascript" src="js/addon_js_composer_front.js"></script>
-    <script type="text/javascript" src="js/js_composer_front.min.js"></script>
-    <script async="" type="text/javascript" src="js/js.js"></script>
-    <script src="./js/myslider.js"></script>
-  </body>
+
+      var n = d.getElementsByTagName("script")[0],
+        s = d.createElement("script"),
+        f = function () {
+          n.parentNode.insertBefore(s, n);
+        };
+      s.type = "text/javascript";
+      s.async = true;
+      s.src = "https://mc.yandex.ru/metrika/watch.js";
+
+      if (w.opera == "[object Opera]") {
+        d.addEventListener("DOMContentLoaded", f, false);
+      } else {
+        f();
+      }
+    })(document, window, "yandex_metrika_callbacks");
+  </script>
+  <noscript>
+    <div>
+      <img src="https://mc.yandex.ru/watch/34585525" style="position: absolute; left: -9999px" alt="" />
+    </div>
+  </noscript>
+  <div class="om-back-to-top"></div>
+  <link rel="stylesheet" property="stylesheet" id="om_owl-carousel-css" href="css/owl.carousel.css" type="text/css"
+    media="all" />
+  <link rel="stylesheet" property="stylesheet" id="select2-css" href="css/select2.min.css" type="text/css"
+    media="all" />
+  <script type="text/javascript" src="js/jquery.form.min.js"></script>
+  <script type="text/javascript">
+    /* <![CDATA[ */
+    var _wpcf7 = {
+      loaderUrl: "data:image\/svg+xml;utf8,%3Csvg xmlns=%22http:\/\/www.w3.org\/2000\/svg%22 viewBox=%220 0 48 48%22 width=%2228%22 height=%2228%22%3E\r\n%3Ccircle class=%22path%22 cx=%2224%22 cy=%2224%22 r=%2220%22 fill=%22none%22 stroke=%22%23a8a8a8%22 stroke-width=%224%22%3E\r\n  %3Canimate attributeName=%22stroke-dasharray%22 attributeType=%22XML%22 from=%221,200%22 to=%2289,200%22 values=%221,200; 89,200; 89,200%22 keyTimes=%220; 0.5; 1%22 dur=%221.5s%22 repeatCount=%22indefinite%22 \/%3E\r\n  %3Canimate attributeName=%22stroke-dashoffset%22 attributeType=%22XML%22 from=%220%22 to=%22-124%22 values=%220; -35; -124%22 keyTimes=%220; 0.5; 1%22 dur=%221.5s%22 repeatCount=%22indefinite%22 \/%3E\r\n  %3CanimateTransform attributeName=%22transform%22 attributeType=%22XML%22 type=%22rotate%22 from=%220 24 24%22 to=%22360 24 24%22 dur=%223s%22 repeatCount=%22indefinite%22\/%3E\r\n%3C\/circle%3E\r\n%3C\/svg%3E",
+      recaptcha: {
+        messages: {
+          empty: "Please verify that you are not a robot."
+        },
+      },
+      sending: "Sending ...",
+      cached: "1",
+    };
+        /* ]]> */
+  </script>
+  <script type="text/javascript" src="js/scripts.js"></script>
+  <script type="text/javascript" src="js/jquery.prettyPhoto.custom.min.js"></script>
+  <script type="text/javascript" src="js/jquery.nav.om.js"></script>
+  <script type="text/javascript" src="js/jquery.superfish.min.js"></script>
+  <script type="text/javascript" src="js/custom.js"></script>
+  <script type="text/javascript">
+    jQuery(function () {
+      lightbox_init({
+        social_tools: "",
+        overlay_gallery: false
+      });
+      om_sidebar_slide_init();
+    });
+  </script>
+  <script type="text/javascript" src="js/jquery.om.sticky.sidebar.js"></script>
+  <script type="text/javascript" src="js/owl.carousel.min.js"></script>
+
+  <script src="./js/myslider.js"></script>
+</body>
+
 </html>
 <!-- Performance optimized by W3 Total Cache. Learn more: http://www.w3-edge.com/wordpress-plugins/
 
